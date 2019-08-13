@@ -17,7 +17,11 @@
       <pubDate>Tue, 13 Aug 2019 13:06:44 +0900</pubDate>
       
       <guid>https://ytomimoto.github.io/post/test/</guid>
-      <description>はじめに はじめまして。</description>
+      <description>はじめに 業務で AWS EC2 を用いてWEBアプリケーションを作成した。 その際EC2の設定を触っていく中で分からない言葉が多かったので、書籍を購入したので読んで見る。
+#
+はじめに 冒頭にある「探検ツアーの流れ」というロードマップが分かりやすい。 パケットが小包という表現はわかりやすかった。 知っている言葉と知らない言葉でごちゃっている感。
+第1章 URL末尾の「/」についてはなんとなく理解していたつもりだったものの、 活字で読んでみるとなるほどなぁ、という一面はあった。
+JavaScriptでdecodeURIとかよく出てきたけど、URIとURLの違いについてはあまり意識していなかった。 なるほど感。</description>
     </item>
     
   </channel>
