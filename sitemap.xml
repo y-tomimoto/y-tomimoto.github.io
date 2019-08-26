@@ -9,9 +9,44 @@
   </url>
   
   <url>
+    <loc>https://ytomimoto.github.io/categories/</loc>
+    <lastmod>2019-08-13T13:06:44+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ytomimoto.github.io/tags/github/</loc>
+    <lastmod>2019-08-13T13:06:44+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ytomimoto.github.io/categories/hugo/</loc>
+    <lastmod>2019-08-13T13:06:44+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ytomimoto.github.io/tags/hugo/</loc>
+    <lastmod>2019-08-13T13:06:44+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://ytomimoto.github.io/post/</loc>
     <lastmod>2019-08-13T13:06:44+09:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ytomimoto.github.io/tags/</loc>
+    <lastmod>2019-08-13T13:06:44+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ytomimoto.github.io/post/reading02/</loc>
+    <lastmod>2019-08-13T13:06:44+09:00</lastmod>
   </url>
   
   <url>
@@ -20,12 +55,12 @@
   </url>
   
   <url>
-    <loc>https://ytomimoto.github.io/categories/</loc>
+    <loc>https://ytomimoto.github.io/post/reading01/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ytomimoto.github.io/tags/</loc>
+    <loc>https://ytomimoto.github.io/post/reading03/</loc>
     <priority>0</priority>
   </url>
   
