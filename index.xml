@@ -6,29 +6,9 @@
     <description>Recent content on tm&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 13 Aug 2019 13:06:44 +0900</lastBuildDate>
     
 	<atom:link href="https://y-tomimoto.github.io/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>「ネットワークはなぜ繋がるのか」を読んだ</title>
-      <link>https://y-tomimoto.github.io/post/test/</link>
-      <pubDate>Tue, 13 Aug 2019 13:06:44 +0900</pubDate>
-      
-      <guid>https://y-tomimoto.github.io/post/test/</guid>
-      <description>はじめに 業務で AWS EC2 を用いてWEBアプリケーションを作成した。 その際EC2の設定を触っていく中で分からない言葉が多かったので、書籍を購入したので読んで見る。
-#
-はじめに 冒頭にある「探検ツアーの流れ」というロードマップが分かりやすい。 パケットが小包という表現はわかりやすかった。 知っている言葉と知らない言葉でごちゃっている感。
-第1章 URL末尾の「/」についてはなんとなく理解していたつもりだったものの、 活字で読んでみるとなるほどなぁ、という一面はあった。
-JavaScriptでdecodeURIとかよく出てきたけど、URIとURLの違いについてはあまり意識していなかった。 なるほど感。
-引き続き読む。
-33ページにいきなり誤植が出てきて笑った。 「メゾッッド」
-フォームのデータを渡すプログラムのファイル名という欄に、 .cgiというファイルがあった。これがhttpの送信を行っているファイルなのだろうか。そういえばfastCGIとか聞いたことある。
-fastCGIはここがわかりやすかった。
-個人的には業界柄この説明、特にCNAMEとかの開設が欲しかった。 ただ書籍的には省くのはわかる。
-動画Libraryを作成する。 そしてMPEGとHLSで作成する。 ↓Libraryを作成するなど。</description>
-    </item>
     
   </channel>
 </rss>
