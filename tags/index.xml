@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Blog</title>
-    <link>https://ytomimoto.github.io/tags/</link>
+    <link>https://y-tomimoto.github.io/tags/</link>
     <description>Recent content in Tags on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Tue, 13 Aug 2019 13:06:44 +0900</lastBuildDate>
     
-	<atom:link href="https://ytomimoto.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://y-tomimoto.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>GitHub</title>
-      <link>https://ytomimoto.github.io/tags/github/</link>
+      <link>https://y-tomimoto.github.io/tags/github/</link>
       <pubDate>Tue, 13 Aug 2019 13:06:44 +0900</pubDate>
       
-      <guid>https://ytomimoto.github.io/tags/github/</guid>
+      <guid>https://y-tomimoto.github.io/tags/github/</guid>
       <description></description>
     </item>
     
     <item>
       <title>HUGO</title>
-      <link>https://ytomimoto.github.io/tags/hugo/</link>
+      <link>https://y-tomimoto.github.io/tags/hugo/</link>
       <pubDate>Tue, 13 Aug 2019 13:06:44 +0900</pubDate>
       
-      <guid>https://ytomimoto.github.io/tags/hugo/</guid>
+      <guid>https://y-tomimoto.github.io/tags/hugo/</guid>
       <description></description>
     </item>
     

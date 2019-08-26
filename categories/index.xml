@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Blog</title>
-    <link>https://ytomimoto.github.io/categories/</link>
+    <link>https://y-tomimoto.github.io/categories/</link>
     <description>Recent content in Categories on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Tue, 13 Aug 2019 13:06:44 +0900</lastBuildDate>
     
-	<atom:link href="https://ytomimoto.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://y-tomimoto.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>HUGO</title>
-      <link>https://ytomimoto.github.io/categories/hugo/</link>
+      <link>https://y-tomimoto.github.io/categories/hugo/</link>
       <pubDate>Tue, 13 Aug 2019 13:06:44 +0900</pubDate>
       
-      <guid>https://ytomimoto.github.io/categories/hugo/</guid>
+      <guid>https://y-tomimoto.github.io/categories/hugo/</guid>
       <description></description>
     </item>
     
