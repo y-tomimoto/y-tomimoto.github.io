@@ -113,6 +113,27 @@
                 <article class="media">
   <div class="media-content">
 
+    <p class="title"><a href="https://y-tomimoto.github.io/post/clean-architecture/"></a></p>
+    <p class="subtitle is-flex" style="justify-content:space-between">
+      <span>Jan 1, 0001</span>
+      <span>1 min.</span>
+    </p>
+
+    <p> #　書評 序盤の煽り方は国民性が現れている気がする。彼らに煽られると赤信号も平気で渡ってしまいそうなくらい。
+- 概要 -  第1部 イントロダクション
+ 第1章 : 設計とアーキテクチャ  ソフトウェアアーキテクチャの目的は、求められるシステムをを構築・保守するために必要な人材を最小限に抑えることである。金言。リリースごとに労力が増えるには、その設計がイケてないとあった。機能を増やすリリースにおいても同じなのだろうか&hellip;   第2部 構成要素から始めよ : プログラミングパラダイム
+ 第3章 : パラダイムのパラダイムの概要
+ 初めてgoto文という言葉を聞いた。構造化プログラミングによって左記は解消されたらしい。調べてみると、確かに悪質なgoto文。ありがとう Edsger Wybe Dijlstra。
+ プログラミングが始まって、3つの大きなパラダイムが起きたとある。このパラダイムは、何をすべきでないかを捉え、それをさせないように起きている。パラダイムごとに細かく詳細が記されていたんだけど、確かにこのパラダイムのおかげでめんどくさいことは書かなくても良くなっている気がする。
+ ここでポリモーフィズムが登場した。Javaを知らないとわからないと思うので、ここでポリモーフィズムについて軽く説明があっても良かったとおもう。
+     </p>
+
+  </div>
+</article>
+
+                <article class="media">
+  <div class="media-content">
+
     <p class="title"><a href="https://y-tomimoto.github.io/post/flutter-learning/"></a></p>
     <p class="subtitle is-flex" style="justify-content:space-between">
       <span>Jan 1, 0001</span>
@@ -120,6 +141,42 @@
     </p>
 
     <p> flutterでわからないこと。 </p>
+
+  </div>
+</article>
+
+                <article class="media">
+  <div class="media-content">
+
+    <p class="title"><a href="https://y-tomimoto.github.io/post/service/"></a></p>
+    <p class="subtitle is-flex" style="justify-content:space-between">
+      <span>Jan 1, 0001</span>
+      <span>1 min.</span>
+    </p>
+
+    <p>何を作成するか github
+twitterのいいねを草化してgithubの草を作成する。 余裕があれば、これも作成する。 &gt; https://twitter.com/1000ch/status/628417071525658624
+twitter contributionを作成する際にapiについて &gt; https://syncer.jp/Web/API/Twitter/REST_API/Object/　
+このサイトで日々のトレンドが理解できているっていうことは、多分毎日できる気がする、、、
+ 一旦APIを叩いてみる。   https://qiita.com/kzthrk/items/84acb969dc0b23aeae58
+  てかそもそもだけど、このAPIへリクエストを投げる際に、毎回登録をしないといけないんじゃないか？？ 他の人の認証情報を取得できるんだろうか、他のアナリティクスをどうやって表現するのだろうか？？  &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+3. 多分行けそうな気がする。 The use of the Twitter API with this account is as follows:
+ In my service, we will present a twitter contribution data view like github contribution(https://help.github.com/en/articles/viewing-contributions-on-your-profile). It is a service that allows you to check your contribution in twitter app looks like github contribution looks and enjoy how much you can contribute in twitter app.</p>
+
+  </div>
+</article>
+
+                <article class="media">
+  <div class="media-content">
+
+    <p class="title"><a href="https://y-tomimoto.github.io/post/twitter-contribution/"></a></p>
+    <p class="subtitle is-flex" style="justify-content:space-between">
+      <span>Jan 1, 0001</span>
+      <span>1 min.</span>
+    </p>
+
+    <p> twitter api を取得するまで twitter api を取得したあと。 技術として何を採用するか 全体フロー
+ clientからアカウント名を取得する(form等で入力させる。もしくはtwitterでメンションを飛ばしたら、それを画像として返すとか、なにをクライアントとするかは自動でおｋ)  あれが参考になりそう、大喜利bot クライアントが何になるかが結構大事。サービス名 ツイ廃ステータス  その値を用いてtwitter api にアクセスする  まずは叩いてみるか、どうせならNode.jsで構築したほうがおもろいよな。 どの技術を採用するか、どういう使われ方をしたいか→ツイ廃チェッカー（twitter contribution） https://da-14.com/blog/nodejs-vs-java-backend-language-large-software-development/ せっかくだしGoを触ってみるか。 バックエンドとして何を採用するのか。 シンプルにNode.jsでいいか、業務で触っているし。 では一旦Node.jsで作成するという前提で進めるか。 Goでも作ってみたい。 https://qiita.com/shti_f/items/b4b5d830672d908eff4e　一旦これを作成してみる。  必要なcontributionを取得する 日別に換算する json形式でclientにレスポンスを返す(かなり時間がかかりそう) jsで加工してpng形式で表示する(できればURLを開放してアクセスできるのがベストだが、、、)  </p>
 
   </div>
 </article>
