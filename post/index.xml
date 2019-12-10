@@ -5,12 +5,20 @@
     <link>https://y-tomimoto.github.io/post/</link>
       <atom:link href="https://y-tomimoto.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 10 Dec 2019 22:49:14 +0900</lastBuildDate>
     <image>
       <url>https://y-tomimoto.github.io/img/icon-192.png</url>
       <title>Posts</title>
       <link>https://y-tomimoto.github.io/post/</link>
     </image>
+    
+    <item>
+      <title>は</title>
+      <link>https://y-tomimoto.github.io/post/review/%E3%81%AF/</link>
+      <pubDate>Tue, 10 Dec 2019 22:49:14 +0900</pubDate>
+      <guid>https://y-tomimoto.github.io/post/review/%E3%81%AF/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
