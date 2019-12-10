@@ -5,12 +5,50 @@
     <link>https://y-tomimoto.github.io/authors/admin/</link>
       <atom:link href="https://y-tomimoto.github.io/authors/admin/index.xml" rel="self" type="application/rss+xml" />
     <description>y-tomimoto</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 07 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 02 Dec 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://y-tomimoto.github.io/img/icon-192.png</url>
       <title>y-tomimoto</title>
       <link>https://y-tomimoto.github.io/authors/admin/</link>
     </image>
+    
+    <item>
+      <title>はじめよう!要件定義 と 実務の剥離について</title>
+      <link>https://y-tomimoto.github.io/post/%E3%81%AF%E3%81%97%E3%82%81%E3%82%88%E3%81%86%E8%A6%81%E4%BB%B6%E5%AE%9A%E7%BE%A9%E3%82%92%E8%AA%AD%E3%82%93%E3%81%9F/</link>
+      <pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>https://y-tomimoto.github.io/post/%E3%81%AF%E3%81%97%E3%82%81%E3%82%88%E3%81%86%E8%A6%81%E4%BB%B6%E5%AE%9A%E7%BE%A9%E3%82%92%E8%AA%AD%E3%82%93%E3%81%9F/</guid>
+      <description>
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png&#34; data-caption=&#34;Academic is mobile first with a responsive design to ensure that your site looks stunning on every device.&#34;&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png&#34; alt=&#34;&#34; &gt;&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Academic is mobile first with a responsive design to ensure that your site looks stunning on every device.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;da&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>An example preprint / working paper</title>
@@ -156,43 +194,6 @@ date: 2019-09-01
 &lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
 &lt;p&gt;Copyright 2016-present &lt;a href=&#34;https://georgecushen.com&#34;&gt;George Cushen&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Released under the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/blob/master/LICENSE.md&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>はじめよう!要件定義 と 実務の剥離について</title>
-      <link>https://y-tomimoto.github.io/post/%E3%81%AF%E3%81%97%E3%82%81%E3%82%88%E3%81%86%E8%A6%81%E4%BB%B6%E5%AE%9A%E7%BE%A9%E3%82%92%E8%AA%AD%E3%82%93%E3%81%9F/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://y-tomimoto.github.io/post/%E3%81%AF%E3%81%97%E3%82%81%E3%82%88%E3%81%86%E8%A6%81%E4%BB%B6%E5%AE%9A%E7%BE%A9%E3%82%92%E8%AA%AD%E3%82%93%E3%81%9F/</guid>
-      <description>
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png&#34; data-caption=&#34;Academic is mobile first with a responsive design to ensure that your site looks stunning on every device.&#34;&gt;
-&lt;img src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png&#34; alt=&#34;&#34; &gt;&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption&gt;
-    Academic is mobile first with a responsive design to ensure that your site looks stunning on every device.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
 </description>
     </item>
     
