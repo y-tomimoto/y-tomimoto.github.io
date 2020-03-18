@@ -590,9 +590,8 @@
     
     <h1>Biography</h1>
 
-    <p>業務ではフロントからサーバー、インフラまで幅広く触る。
-チームのスケール上、基本的に 1 人で開発、たまにチーム開発。</p>
-<p>大学卒業後、化粧品メーカーの物流部門において、企画立案から物流網の全体設計及び企画実行、運用フローの制定とリリースまでを経験。その後、AdTech 業界にエンジニアとして参画。参画後は広告成果計測（トラッキング技術）の調査・実装をメインとし、動画広告エンジンの UI 設計及び実装を経験。その後、Flutter を用いたモバイルアプリケーションを開発を経験し、現在は API 開発に従事している。(20190301 時点)</p>
+    <p>業務ではフロントからサーバー、インフラまで担当。</p>
+<p>大学卒業後、化粧品メーカーの物流部門において、企画立案から物流網の全体設計及び企画実行、運用フローの制定とリリースまでを経験。その後、AdTech 業界にエンジニアとして参画。参画後は広告成果計測（トラッキング技術）の調査・実装をメインとし、動画広告エンジンの UI 設計及び実装を経験。その後、Flutter を用いたモバイルアプリケーションを開発を経験した。最近は API や検索エンジンを開発中。</p>
 <h1 id="record-of-reading">Record Of Reading</h1>
 <ul>
 <li>はじめよう!要件定義 ~ビギナーからベテランまで~</li>
@@ -948,29 +947,157 @@
         <div class="card">
           <div class="card-body">
             <h4 class="card-title exp-title text-muted mt-0 mb-1">Developer</h4>
-            <h4 class="card-title exp-company text-muted my-0">API開発</h4>
+            <h4 class="card-title exp-company text-muted my-0">MarketPlace上で動作する検索エンジン及びDBの開発</h4>
             <div class="text-muted exp-meta">
-              Nov 2019 –
+              Feb 2020 –
               
                 Present
               
               
                 <span class="middot-divider"></span>
-                <span>private</span>
+                <span>public</span>
               
             </div>
             <div class="card-text"><h2 id="heading">要件</h2>
 <hr>
 <ul>
-<li>高度なトラフィックに耐えうる設計</li>
-<li>KVS形式でデータを管理</li>
-<li>private&hellip;</li>
+<li>MarketPlace上で参照するための顧客データを持つDBを用意する</li>
+<li>MarketPlace上で動作する自然言語処理ロジックを構築する</li>
+<li>顧客データを顧客自らuploadするための管理画面を用意する</li>
+<li>管理画面からDBへデータをpushするためのpipelineを用意する</li>
+<li>各サービスはDockerコンテナで管理し、Kubernetesで管理する。</li>
 </ul>
 <h2 id="heading1">前提</h2>
 <hr>
 <ul>
-<li>社内インフラはAWS</li>
-<li>private&hellip;</li>
+<li>MarketPlaceの検索エンジンであるため、高トラフィックに耐えうる設計であるべき</li>
+<li>MarketPlace内の顧客情報には、商品の在庫状況が含まれており、更新処理が頻繁に発生することが予想される。</li>
+</ul>
+<h2 id="heading2">担当工程</h2>
+<hr>
+<ul>
+<li>自然言語処理ロジックの要件定義・実装まで</li>
+<li>顧客データを持つDBのindex設計・実装</li>
+<li>データパイプラインの設計・実装</li>
+<li>(管理画面の設計・実装)</li>
+</ul>
+<h2 id="heading3">採用した技術</h2>
+<h3 id="elasticsearch">ElasticSearch</h3>
+<h4 id="heading4">採用理由</h4>
+<hr>
+<ul>
+<li><code>Lucene</code> をベースとした <code>ElasticSearch</code> か <code>Solr</code> を採用対象とし、結果として <code>ElasticSearch</code> を採用。</li>
+</ul>
+<ol>
+<li>柔軟に検索ロジック  の構築をしたいので、plugin が豊富で簡単に拡張できる ElasticSearch が良さそうだった。Solr の場合は Jar ファイルを都度用意する必要があり、チームの規模的に拡張性とコストが見合わなかった。</li>
+<li>BI ツール及び、GUI として kibana を採用したかった。振り返ってみるとデータの投入や、クエリ作成など kibana を導入することでとても捗った。solr にも banana という BI ツールがあったのだが、個人的に kibana のほうが UI は素敵だった。</li>
+<li>同様の MarketPlace 構築に向け GMO が ElasticSearch を採用、また、マッチングアプリや、グルメサイト等も ElasticSearch を採用しており、技術的に参照できそうなドキュメントが多かった。
+<blockquote>
+<p><a href="https://www.slideshare.net/ssuser7eadbf/elasticsearch-sudachi">https://www.slideshare.net/ssuser7eadbf/elasticsearch-sudachi</a></p>
+</blockquote>
+</li>
+<li>他の project で、インシデント時の alert から、データの push などで Fluentd を採用している。今回も、データパイプラインの中で fluentd を採用したいため、Fluentd に plugin を持つ ElasticSearch を採用したい。
+　</li>
+</ol>
+<h2 id="k8s">k8s</h2>
+<h4 id="heading5">採用理由</h4>
+<hr>
+<ul>
+<li>
+<p>顧客データfileを管理画面からアップロードした際、ElasticSearch投入する前に、下記2点の処理が必要になる。</p>
+<ol>
+<li>Fileをinsertできるデータ形式に変換</li>
+<li>変換したデータをElasticSearchに投入</li>
+</ol>
+</li>
+<li>
+<p>顧客データは数万行に及ぶため、Clientで処理することは避けたい。</p>
+</li>
+<li>
+<p>上記2つの責務を果たすInterfaceをElasticSearchとClient間に用意する必要がある。</p>
+</li>
+<li>
+<p>この際、2つの責務を1つのInterfaceでは果たそうとした場合、下記が心配。</p>
+<ol>
+<li>ElasticSearchへデータuploadに失敗した際、リトライ用にデータはInterface上に持つ必要がある。</li>
+<li>その場合、データが増加するに従って、Interfaceのパフォーマンスが落ちそう。
+<!-- raw HTML omitted --></li>
+</ol>
+</li>
+<li>
+<p>そのため、下記責務別にApplicationを用意し、Interfaceのみに責務を持たないようなデータパイプラインを構築したい。</p>
+<ul>
+<li>管理画面からアップロードされたファイルを、データに変換するInterface</li>
+<li>リトライ用にデータを保存するBucket</li>
+<li>Bucketを参照し、ElasticSearchにデータを分散するフレームワーク</li>
+</ul>
+</li>
+<li>
+<p>上記のデータパイプラインを構成するContainerのサービスイン・運用コストを抑えるために、k8sを採用したい。</p>
+</li>
+</ul>
+<h3 id="fluentd">Fluentd</h3>
+<h4 id="heading6">採用理由</h4>
+<hr>
+<ul>
+<li>分散処理用のフレームワーク。ElasticSearch用のPluginがあったので採用。</li>
+<li>前回のPJで触ったとき、監視機能が有用だったこともある。</li>
+</ul>
+<h3 id="kafka">Kafka</h3>
+<h4 id="heading7">採用理由</h4>
+<hr>
+<ul>
+<li>今回は顧客データ内に商品在庫を持つ。更新が発生する際、逐次処理したいので、メッセージキューを採用したかった。</li>
+<li>また、商戦の時期に入ると、データ量が急増し、DBを逼迫することが予想されるので、負荷を均したかった。
+-上記のデータパイプラインにKafkaを追加。</li>
+</ul>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row experience">
+      
+      <div class="col-auto text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="m-2">
+          <span class="badge badge-pill border ">&nbsp;</span>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+      
+      <div class="col py-2">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title exp-title text-muted mt-0 mb-1">Developer</h4>
+            <h4 class="card-title exp-company text-muted my-0">API開発</h4>
+            <div class="text-muted exp-meta">
+              Nov 2019 –
+              
+                Jan 2020
+              
+              
+                <span class="middot-divider"></span>
+                <span>public</span>
+              
+            </div>
+            <div class="card-text"><h2 id="heading">要件</h2>
+<hr>
+<ul>
+<li>高頻度のトラフィックに耐えうる設計であること。</li>
+<li>KVS形式でデータを管理すること。</li>
+</ul>
+<h2 id="heading1">前提</h2>
+<hr>
+<ul>
+<li>既存のサービスに対する機能追加</li>
 </ul>
 <h2 id="heading2">担当工程</h2>
 <hr>
@@ -979,34 +1106,50 @@
 </ul>
 <h2 id="heading3">採用した技術</h2>
 <h3 id="docker">Docker</h3>
-<h3 id="aws-dynamodbec2">AWS DynamoDB・EC2</h3>
+<h3 id="aws-dynamodb">AWS DynamoDB</h3>
+<h4 id="heading4">採用した理由</h4>
 <hr>
 <ul>
 <li>
-<p>KVS形式でデータを管理するかつ、トランザクションが想定されないため、NoSQLを採用したい。
-=&gt; 社内インフラであるAWS内DynamoDBを採用。</p>
+<p>今回は、KVS形式でデータを管理するかつ、トランザクションが想定されないため、NoSQLを採用したい。</p>
 </li>
 <li>
-<p>大量のリクエストが予想されるため、リクエスト単位で料金が発生するAWS Lambdaは避けたい。</p>
+<p>また、リクエストが膨大であり、今後スケールの可能性が高い。</p>
 </li>
 <li>
-<p>リクエストの規模が想定できないため、リリース後しばらくはDynamoDBのキャパシティーモードに <code>オンデマンド</code>を採用したい。
+<p>NoSQLの中でも、オートスケールを強みとするDynamoDBを採用。レプリケーションやfailoverを自動で再現してくれる点も、運用コストを下げるという意味で評価した。</p>
+</li>
+</ul>
+<h3 id="aws-ec2">AWS EC2</h3>
+<h4 id="heading5">採用した理由</h4>
+<hr>
+<ul>
+<li>大量のリクエストが予想されるため、リクエスト単位で料金が発生するAWS Lambdaは避けたい。</li>
+<li>リクエストの規模が想定できないため、リリース後しばらくはDynamoDBのキャパシティーモードに <code>オンデマンド</code>を採用したい。
 =&gt; AWS Elastic Beanstalkは採用しない
-=&gt; EC2上にアプリケーションを構築</p>
-</li>
+=&gt; EC2上にアプリケーションを構築</li>
 </ul>
 <h3 id="nodejs">Node.js</h3>
-<h4 id="heading4">採用理由</h4>
+<h4 id="heading6">採用理由</h4>
 <hr>
 <ul>
-<li>aws-sdkをサポートしている必要がある。</li>
-<li>使用上発行したキーが重複する可能性があり、スレッドセーフなAPIとしたい。</li>
+<li>DynamoDBを採用するため、aws-sdkをサポートしている必要があった。</li>
+<li>使用上発行したキーが重複する可能性を避けたいのでスレッドセーフなApplicationを構築したかった。</li>
+<li>今後自社内の他のサービスでも用いられる可能性が高かったので、可読性が高いかつ、学習コストの低い言語で再現したかった。</li>
 </ul>
 <h3 id="webpack">webpack</h3>
-<h4 id="heading5">採用理由</h4>
+<h4 id="heading7">採用理由</h4>
 <hr>
 <ul>
 <li>アプリケーションのbuildをタスクランナーで実行したい。</li>
+<li>技術的なチャレンジという側面も強い。</li>
+</ul>
+<h3 id="terraform">Terraform</h3>
+<h4 id="heading8">採用理由</h4>
+<hr>
+<ul>
+<li>今後サービスごとに当Applicationを拡張機能として追加できるようにしたい。</li>
+<li>DynamoDBにてTTLの設定や、Primary Keyの設定、特に、キャパシティモードについての設定はコード管理しておきたい。</li>
 </ul>
 </div>
           </div>
@@ -1057,13 +1200,13 @@
 <h2 id="heading1">前提</h2>
 <hr>
 <ul>
-<li>納期が3ヶ月</li>
-<li>割り当てられる人員を考慮しマルチプラットフォームを採用したい</li>
+<li>割り当てられる人員を考慮し、マルチプラットフォームを採用したい</li>
 </ul>
 <h2 id="heading2">担当工程</h2>
 <hr>
 <ul>
 <li>要求分析〜実装まで</li>
+<li>リリース作業についてはiOSのみを担当</li>
 </ul>
 <h2 id="heading3">採用した技術</h2>
 <h3 id="flutter">Flutter</h3>
@@ -1076,12 +1219,16 @@
 <li>
 <p>Flutterを選択したのは、JavaScriptライクなDartで書くことができたこと、公式のライブラリ・ドキュメントが豊富であったため。</p>
 </li>
+<li>
+<p>終了後に思ったことだが、まだまだ歴が浅いフレームワークであり、公式のpluginでも予期しない挙動が発生したり、各Widget間でのstateの共有パターンが複数勃興しているかつ難解なものもある。一時期のReactのstate論争に似たものを感じた。</p>
+</li>
 </ul>
 <h3 id="firebase">Firebase</h3>
 <h4 id="heading5">採用理由</h4>
 <hr>
 <ul>
 <li>プッシュ通知を実装する際、公式のfirebasePluginが用意されていたため。</li>
+<li>flutter側のpluginのversionと、Flutter自体のversionに互換性がなく、挙動を確認する際はFlutterのversionをダウングレードするなどしなければ行けなかった。今後改善されるとは思うが、コミュニティがまだまだ途上である気がする。貢献していきたい。</li>
 </ul>
 </div>
           </div>
@@ -1125,9 +1272,6 @@
 </ul>
 <h2 id="heading1">前提</h2>
 <hr>
-<ul>
-<li>社内インフラはAWS</li>
-</ul>
 <h2 id="heading2">担当工程</h2>
 <hr>
 <ul>
@@ -1139,20 +1283,25 @@
 <h4 id="heading4">採用理由</h4>
 <hr>
 <ul>
-<li>排他制御を不要とするシングルスレッド環境でアプリケーションを構築したい。</li>
+<li>排他制御を不要とするシングルスレッド環境でアプリケーションを構築したかったため。</li>
 </ul>
 <h3 id="aws-ec2s3cloudfront">AWS EC2・S3・Cloudfront</h3>
 <h4 id="heading5">採用理由</h4>
 <hr>
 <ul>
 <li>
-<p>在庫データを管理する際、DBを用意する程の在庫量ではなかったので、障害点を減らすためにCSVファイルを動的に書き換え在庫を管理したい。</p>
+<p>静的ファイルをS3で管理。</p>
+</li>
+<li>
+<p>当初は高頻度のリクエストではないかつ、処理の負荷も高くなかったため、AWS Lambdaを採用したかった。</p>
+</li>
+<li>
+<p>しかし在庫データを管理する際、DBを用意する程の在庫量ではなかったので、障害点を減らすためにCSVファイルを動的に書き換え在庫を管理したかったので、EC2を用意。</p>
 </li>
 <li>
 <p>サーバーレスアーキテクチャで実現しようとした場合、スプレッドシートで管理する方法もあったが、Gsuiteアカウントの権限付与関連でインフラチームに面倒をかけそうだったため。EC2インスタンス内で簡潔させることにした。</p>
 </li>
 </ul>
-<hr>
 </div>
           </div>
         </div>
@@ -1193,20 +1342,19 @@
             <div class="card-text"><h2 id="heading">要件</h2>
 <hr>
 <ul>
-<li>カスタマイズ可能なUIを持つ（コントローラ等）</li>
-<li>ユーザーのプレイヤー配置コストをなるべく下げたい</li>
-<li>3rd Partyのライブラリになるべく依存しない</li>
-<li>早期の納品</li>
+<li>カスタマイズ可能なUIcomponentを持つ（再生ボタンのマークを変更する・停止時のアニメーションを変更する等）</li>
+<li>ユーザーのプレイヤー配置コストを抑える</li>
+<li>3rd Partyのライブラリに依存しない</li>
 </ul>
 <h2 id="heading1">前提</h2>
 <hr>
 <ul>
-<li>社内インフラはAWS</li>
+<li>試験的導入のため、再生する動画を自社で管理せず、他社サーバーから引く。</li>
 </ul>
 <h2 id="heading2">担当工程</h2>
 <hr>
 <ul>
-<li>実装</li>
+<li>要件定義〜実装までを担当。</li>
 </ul>
 <h2 id="heading3">採用した技術</h2>
 <h3 id="html5css3javascriptjquery">HTML5・CSS3・JavaScript・jQuery</h3>
@@ -1221,13 +1369,14 @@
 <h4 id="heading5">採用理由</h4>
 <hr>
 <ul>
-<li>buildをタスクランナーに実行させたかった。フロントのプロダクトのため、UIに対する修正が都度入ることを想定し、保守運用のハードルが高いwebpackの導入は避ける。</li>
+<li>buildをタスクランナーに実行させたかった。</li>
+<li>UIに対する修正が都度入ることを想定し、デザイナーでも触れるような設計にしたかったので、学習コストの高いwebpackの導入は避けたかった。</li>
 </ul>
 <h3 id="aws-s3cloudfront">AWS S3・Cloudfront</h3>
 <h4 id="heading6">採用理由</h4>
 <hr>
 <ul>
-<li>静的ファイル配置のため。</li>
+<li>静的ファイル配置のため</li>
 </ul>
 <h3 id="heading7"></h3></div>
           </div>
@@ -1255,7 +1404,7 @@
         <div class="card">
           <div class="card-body">
             <h4 class="card-title exp-title text-muted mt-0 mb-1">Developer</h4>
-            <h4 class="card-title exp-company text-muted my-0"><a href="https://developer.cybozu.io/hc/ja/articles/360000503306" target="_blank" rel="noopener">Garoon APIを用いたSlackbotの開発</a></h4>
+            <h4 class="card-title exp-company text-muted my-0"><a href="https://developer.cybozu.io/hc/ja/articles/360000503306" target="_blank" rel="noopener">Cybozu Garoon APIを用いたSlackbotの開発</a></h4>
             <div class="text-muted exp-meta">
               Sep 2018 –
               
@@ -1266,18 +1415,20 @@
             <div class="card-text"><h2 id="heading">要件</h2>
 <hr>
 <ul>
-<li>管理画面を経由せずにSlackから社内情報にアクセスする</li>
+<li>導入しているグループウェアの管理画面を経由せずにSlackから社内情報にアクセスする</li>
 <li>社内情報にアクセスするためのキーは外部に公開しない</li>
 </ul>
 <h2 id="heading1">前提</h2>
 <hr>
 <ul>
+<li>社内ではSlackが展開されている</li>
 <li>社内インフラはAWS</li>
+<li>グループウェアとしてCybozuを採用</li>
 </ul>
 <h2 id="heading2">担当工程</h2>
 <hr>
 <ul>
-<li>要件定義〜実装まで</li>
+<li>要件定義〜実装までを担当。</li>
 </ul>
 <h2 id="heading3">採用した技術</h2>
 <h3 id="aws-lambda--api-gateway--cloudwatch-logs">AWS Lambda ・ API Gateway ・ Cloudwatch Logs</h3>
@@ -1285,7 +1436,7 @@
 <hr>
 <ul>
 <li>
-<p>社内ツールのため大量のリクエストは想定されず、実行が不定期になりそう。</p>
+<p>社内ツールのため大量のリクエストは想定されず、実行が不定期になりそうだった。</p>
 </li>
 <li>
 <p>APIを叩いた結果を返すだけなので、リクエストに対して負荷の高い処理は発生せず、実行時間も短そう。</p>
@@ -1303,10 +1454,11 @@
 </li>
 </ul>
 <h3 id="nodejs">Node.js</h3>
+<h4 id="heading5">採用理由</h4>
 <hr>
 <ul>
 <li>
-<p>APIのレスポンスが<code>SOAP</code>形式であるため、柔軟に文字列操作したかった。（<code>SOAP API</code>用のクライアントライブラリを導入すると、Lambdaのコストが高くなりそうだった）
+<p>APIのレスポンスが<code>SOAP</code>形式であるため、対象となる情報を取り出すため、柔軟に文字列操作したかった。（<code>SOAP API</code>用のクライアントライブラリを導入すると、Lambdaのコストが高くなりそうだった）
 　</p>
 </li>
 <li>
