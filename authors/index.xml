@@ -5,7 +5,7 @@
     <link>https://y-tomimoto.github.io/authors/</link>
       <atom:link href="https://y-tomimoto.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 07 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 28 Sep 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://y-tomimoto.github.io/img/icon-192.png</url>
       <title>Authors</title>
@@ -15,14 +15,28 @@
     <item>
       <title></title>
       <link>https://y-tomimoto.github.io/authors/admin/</link>
-      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 28 Sep 2020 00:00:00 +0000</pubDate>
       <guid>https://y-tomimoto.github.io/authors/admin/</guid>
-      <description>&lt;p&gt;業務ではフロントからサーバー、インフラまで担当。&lt;/p&gt;
-&lt;p&gt;大学卒業後、化粧品メーカーの物流部門において、企画立案から物流網の全体設計及び企画実行、運用フローの制定とリリースまでを経験。その後、AdTech 業界にエンジニアとして参画。参画後は広告成果計測（トラッキング技術）の調査・実装をメインとし、動画広告エンジンの UI 設計及び実装を経験。その後、Flutter を用いたモバイルアプリケーションを開発を経験した。最近は API や検索エンジンを開発中。&lt;/p&gt;
-&lt;h1 id=&#34;event&#34;&gt;Event&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://connpass.com/user/BBBBBBBBurning/&#34;&gt;Attendance Record&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+      <description>&lt;p&gt;サーバーサイドをメインとして、たまにインフラ・フロントを触っている Web 系エンジニア。&lt;/p&gt;
+&lt;p&gt;趣味は深夜ラジオで、ラジオを聞きながら家事をするのが最近の楽しみ。&lt;/p&gt;
+&lt;p&gt;Github: &lt;img src=&#34;https://user-images.githubusercontent.com/31181316/94432704-1c085480-01d2-11eb-8d0d-f1fd62893f34.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;heading&#34;&gt;サーバーサイド&lt;/h2&gt;
+&lt;h4 id=&#34;python&#34;&gt;Python&lt;/h4&gt;
+&lt;p&gt;DDD・CleanArchitecture 等の設計思想を理解し、実装に落とし込むことができる。エラーハンドリングや、ロギング・外部通知についても、基本的なアプリケーションに期待する要件を満たすレベルで実装することができる。
+実務では、Flask フレームワークを用いた開発経験が多いが、Django・FastAPI も動かしたことがある。&lt;/p&gt;
+&lt;h4 id=&#34;nodejs&#34;&gt;Node.js&lt;/h4&gt;
+&lt;p&gt;実務での開発経験があり。簡単な Web アプリケーションを用意することができるレベル。&lt;/p&gt;
+&lt;h4 id=&#34;kotlin&#34;&gt;Kotlin&lt;/h4&gt;
+&lt;p&gt;文法を理解し、個人開発で触っている程度。&lt;/p&gt;
+&lt;h2 id=&#34;heading1&#34;&gt;インフラ&lt;/h2&gt;
+&lt;h4 id=&#34;aws&#34;&gt;AWS&lt;/h4&gt;
+&lt;p&gt;EC2 の構築から、ALB による負荷分散など実務で経験がある。Lambda と APIGateway について、簡単な業務用 Bot の作成で触ったことがあり。DynamoDB についても、業務で採用したことがある。&lt;/p&gt;
+&lt;p&gt;IAM の発行・付与や、VPC の構築などはやったことがない。&lt;/p&gt;
+&lt;h4 id=&#34;gcp&#34;&gt;GCP&lt;/h4&gt;
+&lt;p&gt;直近のプロジェクトにて触っているが、GCE を構築し、負荷分散を敷く程度。&lt;/p&gt;
+&lt;h2 id=&#34;heading2&#34;&gt;フロント&lt;/h2&gt;
+&lt;h4 id=&#34;react&#34;&gt;React&lt;/h4&gt;
+&lt;p&gt;直近のプロジェクトでは React を採用し、state の管理には Redux を採用している。開発しつつキャッチアップ中。&lt;/p&gt;
 </description>
     </item>
     
