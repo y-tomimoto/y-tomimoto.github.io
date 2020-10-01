@@ -1026,10 +1026,87 @@
 </ol>
 <h2 id="python">Python</h2>
 <h4 id="oracledbes">データをOracleDBからESに投入する際に採用</h4>
-<p>OracleDBから同期するテーブル以外にも、ES内に追加したいテーブルが出てきた。</p>
+<p><strong>OracleDBから同期するテーブル以外にも、ES内に追加したいテーブルが出てきた。</strong></p>
 <p>新たにESに追加するテーブルには、様々なデータフォーマットのデータを投入されるため、ESに投入する前段階で、データフォーマットを統一して、ESに投入するためのAdapterを実装するために、Pythonを採用した。</p>
 <p>【採用理由】</p>
 <p>データフォーマットを整える際、Pandasを使いたかった。</p>
+<h1 id="heading6">成果</h1>
+<p>結論からいうと、当初想定していた検索パフォーマンスを達成できているとはまだ言えない。
+その原因は、OracleDBからのデータはElasticSearchに同期しない方向で実装を進めたことにある。</p>
+<h2 id="heading7">理想だった手法</h2>
+<p>本来はOracleDBのデータをESに同期し、ESを参照したかったが、OracleDBからESにデータを同期するために検討した方法に、いづれも問題点があった。</p>
+<p><strong>方法1. Logstashを用いてESにデータを流す</strong></p>
+<p>ESで公式に推奨されている方法。</p>
+<blockquote>
+<p><a href="https://www.elastic.co/jp/blog/how-to-keep-elasticsearch-synchronized-with-a-relational-database-using-logstash">https://www.elastic.co/jp/blog/how-to-keep-elasticsearch-synchronized-with-a-relational-database-using-logstash</a></p>
+</blockquote>
+<p>この方法で行きたかったが、OracleDBはオンプレで動作しており、Logstash導入時の影響範囲が想定できなかった。
+近々Cloudへの移行の話もあるとのことだったので、一旦この方法は見送った。</p>
+<p><strong>方法2.定期的にOracleDBからデータを取得するbatchを用意する</strong></p>
+<p>OracleDBから指定テーブルのデータを落とすバッチを用意し、そのバッチサーバ内のデータをESにuploadする方法を考えた。</p>
+<p>しかし、この方法だと、下記2点の嫌なことがあったので、この方法も見送った。</p>
+<ol>
+<li>差分更新ではなく、都度全て更新してしまう</li>
+<li>データが大きいため、バッチの動作〜ESへのデータアップロードまでのフローで、OracleDB〜ES間のデータに、30分以上のラグが出てしまう</li>
+</ol>
+<hr>
+<h2 id="heading8">代替案</h2>
+<p>検討した結果、タイムラグを許容してまで、検索精度を上げる必要はないという結論になった。</p>
+<p>なので、OracleDBのCloud化に伴い、Logstashを導入できるまでは、</p>
+<ol>
+<li>検索画面から、<strong>OracleDBに存在しないテーブル</strong>のみを持つESに対して、検索ワードを投げる</li>
+<li>ESからのレスポンス内に存在する、共有のプライマリーキーで、OracleDBを参照する</li>
+<li>その結果をMergeして、検索画面に返す</li>
+</ol>
+<p>という、クライアント側で擬似的なjoinを行う方法を採用することにした。</p>
+<p>※<strong>ES内にのみ新規追加したテーブル</strong>と、<strong>OracleDB内のテーブル</strong>は、<strong>共通のプライマリーキー</strong>を持っている</p>
+<p><em>ES内に新規追加される、OracleDBには存在しないテーブル</em></p>
+<table>
+<thead>
+<tr>
+<th><strong>アフィリエイトID</strong></th>
+<th>new_columnA</th>
+<th>&hellip;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>001</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
+</tr>
+<tr>
+<td>002</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
+</tr>
+</tbody>
+</table>
+<p><em>ESに同期したかった、OracleDB内のテーブル</em></p>
+<table>
+<thead>
+<tr>
+<th><strong>アフィリエイトID</strong></th>
+<th>exist_columnB</th>
+<th>&hellip;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>001</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
+</tr>
+<tr>
+<td>002</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="heading9">代替案の惜しい点</h2>
+<p>ESに設定した、N-gram・形態素解析が、既存のOracleDBのテーブルには適用されない点。
+検索でHitしてほしい情報が、ES内に網羅的に存在する状態が理想なので、OracleDBがCloudに移行したタイミングで、OracleDB〜ES間のデータを同期できるようにしたい。</p>
 </div>
           </div>
         </div>
