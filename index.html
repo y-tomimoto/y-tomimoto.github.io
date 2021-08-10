@@ -295,35 +295,6 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#experience" data-target="#experience"><span>Experience</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
           <a class="nav-link " href="/#jobdescriptions" data-target="#jobdescriptions"><span>Job Descriptions</span></a>
         </li>
 
@@ -517,26 +488,54 @@
     
     <h1>Biography</h1>
 
-    <p>サーバーサイドをメインとして、たまにインフラ・フロントを触っている Web 系エンジニア。</p>
-<p>趣味は深夜ラジオで、ラジオを聞きながら家事をするのが最近の楽しみ。</p>
-<p>Github: <img src="https://user-images.githubusercontent.com/31181316/94432704-1c085480-01d2-11eb-8d0d-f1fd62893f34.png" alt="image"></p>
-<h2 id="heading">サーバーサイド</h2>
+    <p><em>last updated: 20210810</em></p>
+<p>広告業界で働くエンジニア。</p>
+<p>サーバーサイドがメインだが、インフラやフロントも触ることがある。</p>
+<p>趣味は深夜ラジオを聞くことで、ラジオを聞きながら家事をするのが楽しみ。</p>
+<h1 id="output">Output</h1>
+<h2 id="github">Github</h2>
+<blockquote>
+<p><a href="https://github.com/y-tomimoto">https://github.com/y-tomimoto</a></p>
+<p><!-- raw HTML omitted --><img src="https://user-images.githubusercontent.com/31181316/94432704-1c085480-01d2-11eb-8d0d-f1fd62893f34.png" alt="image"></p>
+</blockquote>
+<h2 id="articles">Articles</h2>
+<blockquote>
+<p><a href="https://qiita.com/y_tom">https://qiita.com/y_tom</a></p>
+<p><!-- raw HTML omitted --><img src="https://user-images.githubusercontent.com/31181316/128854820-2abce8b3-2d4a-4fb8-8205-4c6e0dea06c1.png" alt="image"></p>
+</blockquote>
+<h1 id="experienced">Experienced</h1>
+<h2 id="backend">Backend</h2>
+<pre><code>Java ＞＞ Python ＞＞＞＞ Node.js ＞ Kotlin
+</code></pre><h4 id="java">Java</h4>
+<p>DDDによる設計手法を理解し、実装に落とし込むことができる。また、エラーハンドリングや、ロギング・外部通知についても、基本的なアプリケーションに期待する要件を満たすレベルで実装することができる。</p>
+<p>実務ではSpring Bootによる開発経験が多く、Multi Projectsの構成としたり、Spring Securityを応用した任意の認証方式を実装することもできる。</p>
+<p>ただし、いづれもAPIの開発であり、Thymeleaf 等を通じてフロントを構成した経験は浅いため、これから深めていく必要がある。</p>
 <h4 id="python">Python</h4>
-<p>DDD・CleanArchitecture 等の設計思想を理解し、実装に落とし込むことができる。エラーハンドリングや、ロギング・外部通知についても、基本的なアプリケーションに期待する要件を満たすレベルで実装することができる。
-実務では、Flask フレームワークを用いた開発経験が多いが、Django・FastAPI も動かしたことがある。</p>
+<p>DDDによる設計手法を理解し、実装に落とし込むことができる。また、エラーハンドリングや、ロギング・外部通知についても、基本的なアプリケーションに期待する要件を満たすレベルで実装することができる。</p>
+<p>実務ではFlaskを用いた開発経験が多い。</p>
 <h4 id="nodejs">Node.js</h4>
-<p>実務での開発経験があり。簡単な Web アプリケーションを用意することができるレベル。</p>
+<p>実務での開発経験が1度ある。基本的な Web アプリケーションを用意することはできるが、Node.jsの実行環境についての理解はこれから深めていく必要がある。</p>
 <h4 id="kotlin">Kotlin</h4>
 <p>文法を理解し、個人開発で触っている程度。</p>
-<h2 id="heading1">インフラ</h2>
-<h4 id="aws">AWS</h4>
-<p>EC2 の構築から、ALB による負荷分散など実務で経験がある。Lambda と APIGateway について、簡単な業務用 Bot の作成で触ったことがあり。DynamoDB についても、業務で採用したことがある。</p>
-<p>IAM の発行・付与や、VPC の構築などはやったことがない。</p>
+<h2 id="infrastructure">Infrastructure</h2>
+<pre><code>AWS ＞＞＞＞ GCP
+</code></pre><h4 id="aws">AWS</h4>
+<p>EC2 の構築から、ALB による負荷分散、Route53での名前解決の設定など、アプリケーションを公開するために必要になる基礎的なサービスについては実務で経験がある。</p>
+<p>ECRでのimage管理 ~ ECSでのデプロイについて、既に構築されたデプロイフローを利用した経験はあるが、当該フローを構築したことはない。</p>
+<p>Lambda と APIGateway について、簡単な実務用 Bot の作成で触ったことがあり、概念は理解している。</p>
+<p>永続化に関して、RDS・DynamoDB についても、実務で採用したことがある。DynamoDBについては、オプション毎の料金体系を理解し、フェイルオーバー時の構成などを検討・構築したことがあるが、RDSを構築したことはまだなく、既存のものを利用する程度。</p>
+<p>S3とCloudFrontに関しては実務で利用したことがあり、基本的な利用ができる程度。</p>
+<p>IAM の発行・付与や、VPC の構築などはやったことがなく、概念を理解している程度。</p>
+<p>CloudWatch等、監視にまつわるサービスについては理解が浅く、これから理解を深める必要がある。</p>
 <h4 id="gcp">GCP</h4>
-<p>直近のプロジェクトにて触っているが、GCE を構築し、負荷分散を敷く程度。</p>
-<h2 id="heading2">フロント</h2>
+<p>1度実務にて触った経験があるが、GCE を構築し、負荷分散を敷く程度。</p>
+<h2 id="frontend">Frontend</h2>
+<h4 id="javascript">JavaScript</h4>
+<p>jsの基本的な動作については理解があるものの、Event Bubbling 等、一歩踏み込んだ仕様に関しては理解が浅い。</p>
 <h4 id="react">React</h4>
-<p>直近のプロジェクトでは React を採用し、state の管理には Redux を採用している。開発しつつキャッチアップ中。</p>
+<p>一度実務にて採用したことがある。なお、実務では State の管理に Redux を採用しており、Reactの基本的な概念とState Management については理解がある。</p>
+<h4 id="webpack">Webpack</h4>
+<p>1度実務にて採用したことがあるが、基本的なconfigを理解し、簡単なbuildが出来る程度。</p>
 
 
     <div class="row">
@@ -681,12 +680,119 @@
   <div class="media-body">
 
     <h3 class="article-title mb-0 mt-0">
+      <a href="/post/spring-security/" >Spring Security for API Key</a>
+    </h3>
+
+    
+    <div class="article-style">
+      <a href="https://qiita.com/y_tom/items/3a1c0c9396d9ee4a3b5a">https://qiita.com/y_tom/items/3a1c0c9396d9ee4a3b5a</a>
+    </div>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+        
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  
+  <span><a href="/authors/admin/">Yusuke Tomimoto</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Aug 6, 2021
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    1 min read
+  </span>
+  
+
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="">解説</a></span>
+  
+
+</div>
+
+      
+    </div>
+
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/post/spring-security/" >
+      <img src="/post/spring-security/featured_hu1ad7e586535c9e1888f2ef28b94a63a1_422_150x0_resize_lanczos_2.png" alt="">
+    </a>
+    
+  </div>
+</div>
+
+      
+    
+      
+        
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0">
       <a href="/post/cleanarchitecture/" >CleanArchitecture with Python</a>
     </h3>
 
     
     <div class="article-style">
-      シンプルな API に CleanArchitecture を段階的に適用し、CleanArchitectureが具体的に「どんな変更に強いのか」をコードベースで理解してみる
+      <a href="https://qiita.com/y_tom/items/ac6f6a08bdc374336dc4">https://qiita.com/y_tom/items/ac6f6a08bdc374336dc4</a>
     </div>
     
 
@@ -843,7 +949,7 @@
         <div class="card">
           <div class="card-body">
             <h4 class="card-title exp-title text-muted mt-0 mb-1">Developer</h4>
-            <h4 class="card-title exp-company text-muted my-0"><a href="https://www.fancs.com/" target="_blank" rel="noopener">FAN Communications, Inc.</a></h4>
+            <h4 class="card-title exp-company text-muted my-0"><a href="https://www.fancs.com/" target="_blank" rel="noopener">ファンコミュニケーションズ株式会社</a></h4>
             <div class="text-muted exp-meta">
               Sep 2018 –
               
@@ -970,10 +1076,10 @@
       <div class="col py-2">
         <div class="card">
           <div class="card-body">
-            <h4 class="card-title exp-title text-muted mt-0 mb-1">アフィリエイトバナーを配信するDBの検索精度を改善するプロジェクト</h4>
-            <h4 class="card-title exp-company text-muted my-0">Position: Developer</h4>
+            <h4 class="card-title exp-title text-muted mt-0 mb-1">本人確認機能を提供するプロジェクト</h4>
+            <h4 class="card-title exp-company text-muted my-0">Position: Developer &amp; Project Manager</h4>
             <div class="text-muted exp-meta">
-              Feb 2020 –
+              Feb 2021 –
               
                 Present
               
@@ -982,132 +1088,33 @@
                 <span>public</span>
               
             </div>
-            <div class="card-text"><h1 id="heading">背景</h1>
+            <div class="card-text"><h1 id="heading">前提</h1>
+<p>アフィリエイトサービスを提供している組織でのプロジェクト。</p>
+<p>様々な企業が、アフィリエイトサービス上に宣伝して欲しい商材を掲載し、
+アフィリエイトサービス上を掲載されている商材をブロガーが自身のブログに掲載する。</p>
+<p>ブログ上に掲載された商材が購入された場合、ブロガーに対して、商材提供元の企業が成果報酬を支払うというビジネスモデルとなっている。</p>
+<h1 id="heading1">背景</h1>
+<p>近年、誇大広告等の、消費者が不利益を被る文言を掲載するブログが増加しつつある。</p>
+<p>組織として、これらの不正防止の観点から、アフィリエイトサービスを利用するブロガーに対して、本人確認機能を提供することとなった。</p>
+<h1 id="heading2">理想</h1>
+<p>本人確認機能の提供</p>
+<h1 id="heading3">手法</h1>
+<p>外部のe-KYCサービスを採用し、その本人確認結果をサービス内に反映する。</p>
+<h1 id="heading4">担当工程</h1>
 <ol>
-<li>アフィリエイトバナーに関するデータは、OracleDB内に格納されている。</li>
-<li>アフィリエイトバナー検索画面から、ユーザーがアフィリエイトバナーを検索する際は、DBに対して、検索ワードでLIKE検索を実行するクエリを発行し、検索結果を返している。</li>
+<li>要求定義</li>
+<li>要件定義</li>
+<li>外部サービスの選定及び見積もり~決済</li>
+<li>実装</li>
 </ol>
-<p><img src="https://user-images.githubusercontent.com/31181316/94425655-40126880-01c7-11eb-91ff-97d05015ea7b.png" alt="image"></p>
-<h1 id="heading1">理想</h1>
-<p><strong>現行のLIKE検索より、検索精度の高い検索を実現したい</strong></p>
-<h1 id="heading2">手法</h1>
-<p>ElasticSearchを導入し、OracleDBのデータとElasticSearchのデータを同期させ、検索ワードはElasticSearchに投げるようにする。</p>
-<p><img src="https://user-images.githubusercontent.com/31181316/102949056-ac70df80-450a-11eb-8a18-cd20955ae7fc.png" alt="image"></p>
-<h1 id="heading3">担当工程</h1>
-<ol>
-<li>
-<p>技術選定(所属チームで議論)</p>
-</li>
-<li>
-<p>形態素解析のロジック考案・実装
-<img src="https://user-images.githubusercontent.com/31181316/94427508-29214580-01ca-11eb-9573-db6956f2e137.png" alt="image"></p>
-</li>
-<li>
-<p>ElasticSearchのテーブル設計・実装</p>
-</li>
-</ol>
-<h1 id="heading4">採用した技術</h1>
-<h2 id="elasticsearch">ElasticSearch</h2>
-<h4 id="heading5">検索精度の向上を目的として採用</h4>
-<p>検索精度の向上を目的として採用されていることが多かった、<code>ElasticSearch</code>(以降ESと呼ぶ) か、<code>ES</code>と比較されやすい<code>Solr</code>　を比較し、結果 <code>ES</code> を採用した。</p>
-<p>【採用理由】</p>
-<ol>
-<li>
-<p>柔軟に検索ロジック  の構築をしたいので、plugin が豊富で簡単に拡張できる ElasticSearch が良さそうだった。Solr の場合は、Pluginを用意するために、 Jar ファイルを都度用意する必要があり、めんどくさそうだった。</p>
-</li>
-<li>
-<p>BI ツール及び、GUI として kibanaがあるのがかなり、魅力的だった。振り返ってみるとテストデータの投入や、クエリ作成など kibana によってとても捗った。solr にも banana という BI ツールがあるらしいが、個人的に kibana のほうが UI は素敵だった。</p>
-</li>
-<li>
-<p>同様の MarketPlace 構築に向け GMO が ElasticSearch を採用、また、マッチングアプリや、グルメサイト等も ElasticSearch を採用しており、技術的に参照できそうなドキュメントが多かった。</p>
-<blockquote>
-<p><a href="https://www.slideshare.net/ssuser7eadbf/elasticsearch-sudachi">https://www.slideshare.net/ssuser7eadbf/elasticsearch-sudachi</a></p>
-</blockquote>
-</li>
-</ol>
-<h2 id="python">Python</h2>
-<h4 id="oracledbes">データをOracleDBからESに投入する際に採用</h4>
-<p><strong>OracleDBから同期するテーブル以外にも、ES内に追加したいテーブルが出てきた。</strong></p>
-<p>新たにESに追加するテーブルには、様々なデータフォーマットのデータを投入されるため、ESに投入する前段階で、データフォーマットを統一して、ESに投入するためのAdapterを実装するために、Pythonを採用した。</p>
-<p>【採用理由】</p>
-<p>データフォーマットを整える際、Pandasを使いたかった。</p>
+<h1 id="heading5">採用した技術</h1>
+<h2 id="spring-boot">Spring Boot</h2>
+<p>[選定理由]</p>
+<p>　
+自身を含め計2名での開発であり、一方のメンバーがSpring Bootの経験があったため、言語を揃え、レビューやノウハウの共有の観点から、Spring Bootを採用する経緯となった。
+　　</p>
 <h1 id="heading6">成果</h1>
-<p>結論からいうと、当初想定していた検索パフォーマンスを達成できているとはまだ言えない。
-その原因は、OracleDBからのデータはElasticSearchに同期しない方向で実装を進めたことにある。</p>
-<h2 id="heading7">理想だった手法</h2>
-<p>本来はOracleDBのデータをESに同期し、ESを参照したかったが、OracleDBからESにデータを同期するために検討した方法に、いづれも問題点があった。</p>
-<p><strong>方法1. Logstashを用いてESにデータを流す</strong></p>
-<p>ESで公式に推奨されている方法。</p>
-<blockquote>
-<p><a href="https://www.elastic.co/jp/blog/how-to-keep-elasticsearch-synchronized-with-a-relational-database-using-logstash">https://www.elastic.co/jp/blog/how-to-keep-elasticsearch-synchronized-with-a-relational-database-using-logstash</a></p>
-</blockquote>
-<p>この方法で行きたかったが、OracleDBはオンプレで動作しており、Logstash導入時の影響範囲が想定できなかった。
-近々Cloudへの移行の話もあるとのことだったので、一旦この方法は見送った。</p>
-<p><strong>方法2.定期的にOracleDBからデータを取得するbatchを用意する</strong></p>
-<p>OracleDBから指定テーブルのデータを落とすバッチを用意し、そのバッチサーバ内のデータをESにuploadする方法を考えた。</p>
-<p>しかし、この方法だと、下記2点の嫌なことがあったので、この方法も見送った。</p>
-<ol>
-<li>差分更新ではなく、都度全て更新してしまう</li>
-<li>データが大きいため、バッチの動作〜ESへのデータアップロードまでのフローで、OracleDB〜ES間のデータに、30分以上のラグが出てしまう</li>
-</ol>
-<hr>
-<h2 id="heading8">代替案</h2>
-<p>検討した結果、タイムラグを許容してまで、検索精度を上げる必要はないという結論になった。</p>
-<p>なので、OracleDBのCloud化に伴い、Logstashを導入できるまでは、</p>
-<ol>
-<li>検索画面から、<strong>OracleDBに存在しないテーブル</strong>のみを持つESに対して、検索ワードを投げる</li>
-<li>ESからのレスポンス内に存在する、共有のプライマリーキーで、OracleDBを参照する</li>
-<li>その結果をMergeして、検索画面に返す</li>
-</ol>
-<p>という、クライアント側で擬似的なjoinを行う方法を採用することにした。</p>
-<p>※<strong>ES内にのみ新規追加したテーブル</strong>と、<strong>OracleDB内のテーブル</strong>は、<strong>共通のプライマリーキー</strong>を持っている</p>
-<p><em>ES内に新規追加される、OracleDBには存在しないテーブル</em></p>
-<table>
-<thead>
-<tr>
-<th><strong>アフィリエイトID</strong></th>
-<th>new_columnA</th>
-<th>&hellip;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>001</td>
-<td>&hellip;</td>
-<td>&hellip;</td>
-</tr>
-<tr>
-<td>002</td>
-<td>&hellip;</td>
-<td>&hellip;</td>
-</tr>
-</tbody>
-</table>
-<p><em>ESに同期したかった、OracleDB内のテーブル</em></p>
-<table>
-<thead>
-<tr>
-<th><strong>アフィリエイトID</strong></th>
-<th>exist_columnB</th>
-<th>&hellip;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>001</td>
-<td>&hellip;</td>
-<td>&hellip;</td>
-</tr>
-<tr>
-<td>002</td>
-<td>&hellip;</td>
-<td>&hellip;</td>
-</tr>
-</tbody>
-</table>
-<h2 id="heading9">代替案の惜しい点</h2>
-<p>ESに設定した、N-gram・形態素解析が、既存のOracleDBのテーブルには適用されない点。
-検索でHitしてほしい情報が、ES内に網羅的に存在する状態が理想なので、OracleDBがCloudに移行したタイミングで、OracleDB〜ES間のデータを同期できるようにしたい。</p>
+<p>〆</p>
 </div>
           </div>
         </div>
@@ -1133,7 +1140,285 @@
       <div class="col py-2">
         <div class="card">
           <div class="card-body">
-            <h4 class="card-title exp-title text-muted mt-0 mb-1">Project: 暗号化APIの開発</h4>
+            <h4 class="card-title exp-title text-muted mt-0 mb-1">動画広告を提供するプロジェクト</h4>
+            <h4 class="card-title exp-company text-muted my-0">Position: Developer</h4>
+            <div class="text-muted exp-meta">
+              Aug 2020 –
+              
+                Dec 2020
+              
+              
+                <span class="middot-divider"></span>
+                <span>public</span>
+              
+            </div>
+            <div class="card-text"><h1 id="heading">前提</h1>
+<p>同上</p>
+<h1 id="heading1">背景</h1>
+<p>SNSでも動画広告が主流となっているように、ブログでも動画広告が主流となりつつある。</p>
+<p>それに向け、動画広告の提供を開始することとなった。</p>
+<p><img src="https://user-images.githubusercontent.com/31181316/128892388-1e577b8c-5dae-4d37-9ab8-f03ad4c4b881.png" alt="image"></p>
+<h1 id="heading2">理想</h1>
+<p>動画広告を提供できるようにする</p>
+<h1 id="heading3">手法</h1>
+<p>動画広告を描画するjsタグを用意し、そのタグを配置するだけで、ブログ上に動画広告が掲載されるタグを用意する。</p>
+<h1 id="heading4">担当工程</h1>
+<ol>
+<li>技術選定</li>
+<li>実装</li>
+</ol>
+<h1 id="heading5">採用した技術</h1>
+<h2 id="react">React</h2>
+<p>［採用理由］</p>
+<p>Video.js というvideo player用のOpen Sourceの採用を検討したものが、UIや機能等カスタムを検討した場合に嵌りそうだったので、pure jsでVideo.jsの簡易版を用意してみた。</p>
+<p>その際、1つのeventに対して、複数のUIを変更する必要があった。</p>
+<p>ex) 再生が開始したら、3秒後にコントローラをHideし、コントローラ内のボタンを停止に切り替え、動画を再生し、etc&hellip;</p>
+<p>プロダクトの性質上、Stateに応じてUIを描画するライブラリが適切かと思い、State管理手法で目立っていたReactに切り替え、実装を進めた。</p>
+<h1 id="heading6">成果</h1>
+<p>期待する成果物は出来たが、終盤、webpackによってbuildされたjsのサイズが大きかったため、Preactでリプレイスする等、サイズ圧縮する措置を取ることになった。</p>
+<p>予めサイズについてどの程度を許容するか考え、それに適したライブラリを選択すべきだったと思う。</p>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row experience">
+      
+      <div class="col-auto text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="m-2">
+          <span class="badge badge-pill border ">&nbsp;</span>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+      
+      <div class="col py-2">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title exp-title text-muted mt-0 mb-1">広告の検索精度を改善するプロジェクト</h4>
+            <h4 class="card-title exp-company text-muted my-0">Position: Developer</h4>
+            <div class="text-muted exp-meta">
+              Feb 2020 –
+              
+                Jul 2020
+              
+              
+                <span class="middot-divider"></span>
+                <span>public</span>
+              
+            </div>
+            <div class="card-text"><h1 id="heading">前提</h1>
+<p>同上</p>
+<h1 id="heading1">背景</h1>
+<ol>
+<li>商材に関するデータは、OracleDB内に格納されている。</li>
+<li>ブロガーが商材を検索する際は、検索ワードを元に、LIKE検索を実行するクエリをOracleDBに対して実行し、検索結果を表示している。</li>
+</ol>
+<p><img src="https://user-images.githubusercontent.com/31181316/94425655-40126880-01c7-11eb-91ff-97d05015ea7b.png" alt="image"></p>
+<h1 id="heading2">理想</h1>
+<p><strong>現行のLIKE検索より、検索精度の高い検索を実現したい</strong></p>
+<h1 id="heading3">手法</h1>
+<p>ElasticSearchを導入し、OracleDB内に格納されているデータをElasticSearchに同期させ、検索クエリの実行先をElasticSearchに切り替える。(下図には、後述するプロジェクトに関するComponentも記載されている)</p>
+<p><img src="https://user-images.githubusercontent.com/31181316/102949056-ac70df80-450a-11eb-8a18-cd20955ae7fc.png" alt="image"></p>
+<h1 id="heading4">担当工程</h1>
+<ol>
+<li>技術選定(所属チームで議論)</li>
+<li>形態素解析のロジック考案・実装
+<img src="https://user-images.githubusercontent.com/31181316/94427508-29214580-01ca-11eb-9573-db6956f2e137.png" alt="image"></li>
+<li>ElasticSearchのテーブル設計・実装</li>
+</ol>
+<h1 id="heading5">採用した技術</h1>
+<h2 id="elasticsearch">ElasticSearch</h2>
+<p>検索精度の向上を目的として採用されていることが多かった、<code>ElasticSearch</code>(以降ESと呼ぶ) か、<code>ES</code>と比較されやすい<code>Solr</code>　を比較し、結果 <code>ES</code> を採用した。</p>
+<p>［採用理由］</p>
+<ol>
+<li>
+<p>柔軟に検索ロジック  の構築をしたいので、plugin が豊富で簡単に拡張できる ES が良さそうだった。一応調査したが、Solr の場合は、Pluginを用意するために、 Jar ファイルを都度用意する必要があり、めんどくさそうだった。</p>
+</li>
+<li>
+<p>BI ツール及び、GUI として kibanaがあるのがかなり、魅力的だった。振り返ってみるとテストデータの投入や、クエリ作成など kibana によってとても捗った。solr にも banana という BI ツールがあるらしいが、個人的に kibana のほうが UI は素敵だった。</p>
+</li>
+<li>
+<p>同様の MarketPlace 構築に向け GMO が ES を採用、また、マッチングアプリや、グルメサイト等も ES を採用しており、技術的に参照できそうなドキュメントが多かった。</p>
+<blockquote>
+<p><a href="https://www.slideshare.net/ssuser7eadbf/elasticsearch-sudachi">https://www.slideshare.net/ssuser7eadbf/elasticsearch-sudachi</a></p>
+</blockquote>
+</li>
+</ol>
+<h1 id="heading6">成果</h1>
+<p>OracleDBからESにデータを同期するために、ESで公式に推奨されているlogstashを利用することを検討している。</p>
+<p>プロジェクトに着手していた当時、別チームにてOracleDBの移行プロジェクトが同時進行していたため、データの同期自体は次回のマイルストーンとして設定し、データを受け入れるESのみを構築し、プロジェクトを完了した。データの同期を完了することで、検索精度の改善が見込まれる。</p>
+<blockquote>
+<p><a href="https://www.elastic.co/jp/blog/how-to-keep-elasticsearch-synchronized-with-a-relational-database-using-logstash">https://www.elastic.co/jp/blog/how-to-keep-elasticsearch-synchronized-with-a-relational-database-using-logstash</a></p>
+</blockquote>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row experience">
+      
+      <div class="col-auto text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="m-2">
+          <span class="badge badge-pill border ">&nbsp;</span>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+      
+      <div class="col py-2">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title exp-title text-muted mt-0 mb-1">広告に関するデータ構造を拡張するプロジェクト</h4>
+            <h4 class="card-title exp-company text-muted my-0">Position: Developper</h4>
+            <div class="text-muted exp-meta">
+              Feb 2020 –
+              
+                Jul 2020
+              
+              
+                <span class="middot-divider"></span>
+                <span>public</span>
+              
+            </div>
+            <div class="card-text"><h1 id="heading">前提</h1>
+<p>同上</p>
+<h1 id="heading1">背景</h1>
+<p>アフィリエイトサービス上に登録されている広告データには2パターンある。</p>
+<ol>
+<li>広告データ: 商材 = 1:1 のパターン</li>
+<li>広告データ: 商材 = 1:n のパターン</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>広告データ</th>
+<th>商材</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>夏が来た!特製青汁!</td>
+<td>特製青汁</td>
+</tr>
+<tr>
+<td>2</td>
+<td>夏が来た!トレーニングの季節!</td>
+<td>ダンベル,プロテイン,トレーニングウェア,etc &hellip;</td>
+</tr>
+</tbody>
+</table>
+<p>現在は、データ構造として、広告データのみを管理しており、商材に関するデータを持たない。</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>広告データ</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>夏が来た!特製青汁!</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>夏が来た!トレーニングの季節!</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="heading2">理想</h1>
+<p>データ構造に商材データが紐付いている状態</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>広告データ</th>
+<th>商材</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>夏が来た!特製青汁!</td>
+<td>特製青汁</td>
+</tr>
+<tr>
+<td>2</td>
+<td>夏が来た!トレーニングの季節!</td>
+<td>ダンベル,プロテイン,トレーニングウェア,etc &hellip;</td>
+</tr>
+</tbody>
+</table>
+<h1 id="heading3">担当工程</h1>
+<ol>
+<li>データフローの考案(所属チームにて議論)</li>
+<li>技術選定</li>
+<li>実装(データフロー④の部分)</li>
+</ol>
+<h1 id="heading4">手法</h1>
+<p>直近のプロジェクトにてElasticSearchを導入している。</p>
+<p>検索時のクエリはElasticSearchに発行されるため、ElasticSearch内に商品データに関するテーブルを用意する。</p>
+<p>検索クエリを受け取った際は、広告データに商品データを紐付けた状態で検索結果を返す。</p>
+<p><img src="https://user-images.githubusercontent.com/31181316/102949056-ac70df80-450a-11eb-8a18-cd20955ae7fc.png" alt="image"></p>
+<h1 id="heading5">データフロー</h1>
+<p>①掲載元企業は商材データが記載されたファイルを <code>Data Uploader</code> を通じてアップロードする</p>
+<p>②<code>Data Uploader</code> は受け取ったファイルをStorageにPoolする</p>
+<p>③<code>Data Uploader</code> はPoolが完了した際、アップロード済みステータスを登録する</p>
+<p>④<code>Insert Worker</code>は、アップロード済みステータスを検知し、商材データが記載されたファイルを解析・ESの投入に適した形式に変換し、ESに投入する。</p>
+<h1 id="heading6">採用した技術</h1>
+<h2 id="python">Python</h2>
+<p>［採用理由］</p>
+<p>広告の掲載元となる企業は、様々なデータフォーマットで自社の商材データを管理している。</p>
+<p>ESにフォーマットの異なるデータを投入する前に、データフォーマットを統一して、ESに投入するための Adapter Component を実装する必要があった。</p>
+<p>これらのデータフォーマットを整える際、Pandasを使いたかったので、Pythonを採用した。</p>
+<h1 id="heading7">成果</h1>
+<p>同上</p>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row experience">
+      
+      <div class="col-auto text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="m-2">
+          <span class="badge badge-pill border ">&nbsp;</span>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+      
+      <div class="col py-2">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title exp-title text-muted mt-0 mb-1">暗号化APIを開発するプロジェクト</h4>
             <h4 class="card-title exp-company text-muted my-0">Position: Developper</h4>
             <div class="text-muted exp-meta">
               Nov 2019 –
@@ -1145,7 +1430,9 @@
                 <span>public</span>
               
             </div>
-            <div class="card-text"><h1 id="heading">背景</h1>
+            <div class="card-text"><h1 id="heading">前提</h1>
+<p>同上</p>
+<h1 id="heading1">背景</h1>
 <p>アフィリエイトサービスでは、URL内にクエリパラメータを付与することで、個人を識別する仕組みを実現している。</p>
 <p>ex) https://affiliate/index.html?user_name=田中太郎</p>
 <p>アフィリエイトサービスを複数利用している会社は、このURL内に、複数社分のクエリパラメータが付与され、URLが長くなってしまう。</p>
@@ -1155,13 +1442,12 @@
 <p>そのため、他社への影響を押さえるため、自社のクエリパラメータを、暗号化することとした。</p>
 <pre><code>- companyA_user_name=田中太郎(実際はもっと長い)
 + companyA_user_name=XSGW1GSB
-</code></pre><h1 id="heading1">手法</h1>
+</code></pre><h1 id="heading2">手法</h1>
 <p>発行されたクエリパラメータを暗号化してURLに付与し、コンバージョン(アフィリエイトが成立)の際は、暗号化したキーをクエリパラメータに戻して、既存の成果発生処理プロセスに流す。</p>
-<h1 id="heading2">担当工程</h1>
+<h1 id="heading3">担当工程</h1>
 <p>要件定義〜実装まで</p>
-<h2 id="heading3">採用した技術</h2>
+<h2 id="heading4">採用した技術</h2>
 <h2 id="aws-dynamodb">AWS DynamoDB</h2>
-<h4 id="kvs">KVS形式のデータストアとして採用</h4>
 <p>［採用理由］</p>
 <ol>
 <li>暗号化の性質上、データ形式が1:1であったこと</li>
@@ -1170,9 +1456,11 @@
 <p>から、NoSQLを採用することにした。</p>
 <p>AWSを触っていたこともあり、NoSQLの中でも、DynamoDBを採用した。オートスケールに加え、レプリケーションやfailoverを自動で再現してくれる点も、運用コストを下げられそうだったので、嬉しかった。</p>
 <h2 id="nodejs">Node.js</h2>
-<h4 id="heading4">暗号化アプリケーションとして採用</h4>
 <p>［採用理由］</p>
-<p>シンプルなアプリケーションであったため、aws-sdkがサポートしている言語(DynamoDBを採用するため)内で、お手軽なNode.jsを採用した。</p>
+<p>シンプルなアプリケーションであったため、aws-sdkがサポートしている言語(DynamoDBを採用するため)内で、お手軽なNode.jsを採用した。
+　</p>
+<h1 id="heading5">成果</h1>
+<p>課題を解決済み。正常に動作している。</p>
 </div>
           </div>
         </div>
@@ -1198,7 +1486,7 @@
       <div class="col py-2">
         <div class="card">
           <div class="card-body">
-            <h4 class="card-title exp-title text-muted mt-0 mb-1">Project: オフラインイベント用のモバイルアプリケーション開発</h4>
+            <h4 class="card-title exp-title text-muted mt-0 mb-1">オフラインイベント用のモバイルアプリケーション開発プロジェクト</h4>
             <h4 class="card-title exp-company text-muted my-0">Position: Developper</h4>
             <div class="text-muted exp-meta">
               Jul 2019 –
@@ -1206,9 +1494,12 @@
                 Oct 2019
               
               
+                <span class="middot-divider"></span>
+                <span>Flutter</span>
+              
             </div>
             <div class="card-text"><h1 id="heading">背景</h1>
-<p>オフラインイベント開催に向け、来場者向けにモバイルアプリケーションの開発依頼を受けた。</p>
+<p>組織を挙げたオフラインイベント開催に向け、来場者向けにモバイルアプリケーションを開発して欲しいとオフラインイベントの運営チームから開発依頼を受けた。</p>
 <h1 id="heading1">理想</h1>
 <p>オフラインイベントアプリの基本的な機能を実装したい。</p>
 <ul>
@@ -1219,12 +1510,12 @@
 <p>要求分析〜実装・リリース作業(リリース作業はiOSのみを担当)</p>
 <h2 id="heading3">採用した技術</h2>
 <h3 id="flutter">Flutter</h3>
-<h4 id="heading4">クロスプラットフォームフレームワークとして採用</h4>
 <p>［採用理由］</p>
 <p>選択肢として、React NativeかFlutter、Xamarinがあったが、React Nativeは3rd Partyのライブラリが豊富である反面、障害点の切り分けが困難であることから採用を避けた。Xamarinについてはネット上のドキュメントがやや薄い用に感じたため採用を避けた。</p>
 <p>Flutterを選択したのは、JavaScriptライクなDartで書くことができたこと、公式のライブラリ・ドキュメントが豊富であったため。</p>
-<hr>
-<p>終了後に思ったことだが、まだまだ歴が浅いフレームワークであり、公式のpluginでも予期しない挙動が発生したり、各Widget間でのstateの共有パターンが複数勃興しているかつ難解なものもある。</p>
+<h1 id="heading4">成果</h1>
+<p>　社内のデザインチームに対する事前の働きかけが足りず、リリース直前に社内のデザインガイドラインから逸脱していることが判明した。</p>
+<p>結果、社内スタッフ向けの限定公開という形式で、事実上プロジェクトが頓挫してしまった。</p>
 </div>
           </div>
         </div>
