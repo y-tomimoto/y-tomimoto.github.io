@@ -1079,7 +1079,7 @@
             <h4 class="card-title exp-title text-muted mt-0 mb-1">本人確認機能を提供するプロジェクト</h4>
             <h4 class="card-title exp-company text-muted my-0">Position: Developer &amp; Project Manager</h4>
             <div class="text-muted exp-meta">
-              Feb 2021 –
+              Mar 2021 –
               
                 Present
               
@@ -1100,19 +1100,26 @@
 <p>本人確認機能の提供</p>
 <h1 id="heading3">手法</h1>
 <p>外部のe-KYCサービスを採用し、その本人確認結果をサービス内に反映する。</p>
+<p><img src="https://user-images.githubusercontent.com/31181316/128957906-04e9f335-d308-48d4-b5c0-3e5f779b1b73.png" alt="image"></p>
 <h1 id="heading4">担当工程</h1>
 <ol>
 <li>要求定義</li>
 <li>要件定義</li>
 <li>外部サービスの選定及び見積もり~決済</li>
-<li>実装</li>
+<li>実装(上記EntryPoint Instance ・Result Fetch Instance)</li>
 </ol>
 <h1 id="heading5">採用した技術</h1>
 <h2 id="spring-boot">Spring Boot</h2>
 <p>[選定理由]</p>
 <p>　
 自身を含め計2名での開発であり、一方のメンバーがSpring Bootの経験があったため、言語を揃え、レビューやノウハウの共有の観点から、Spring Bootを採用する経緯となった。
-　　</p>
+　</p>
+<p>複数のComponentによって構成されるため、PullRequestの影響範囲の確認や、domainの再利用等を考慮し、Multi Projects の構成を取りたかった点で、Gradleが適していたり、</p>
+<p>外部e-KYCサービスを、組織内の複数のサービスから参照すべく、マルチテナント構成としたかった。その際、Spring Securityによるアクセス制御が有効であり、</p>
+<p>結果として功を奏した選定となったと思う。</p>
+<h2 id="amazon-aurora">Amazon Aurora</h2>
+<p>本人確認Statusを管理する必要があった。Status管理の性質として、Transactionが複雑になるケースがありそうだった点や、柔軟にクエリを利用したい点があったので、
+RDBを採用したい旨弊チームのテックリードに志願した。Amazon Aurora はテックリードに用意してもらった。</p>
 <h1 id="heading6">成果</h1>
 <p>〆</p>
 </div>
@@ -1177,6 +1184,9 @@
 <h1 id="heading6">成果</h1>
 <p>期待する成果物は出来たが、終盤、webpackによってbuildされたjsのサイズが大きかったため、Preactでリプレイスする等、サイズ圧縮する措置を取ることになった。</p>
 <p>予めサイズについてどの程度を許容するか考え、それに適したライブラリを選択すべきだったと思う。</p>
+<blockquote>
+<p>案内用に公開しているページ: <a href="https://s3-ap-northeast-1.amazonaws.com/test-statics.a8.net/a8video/docs/index.html#_1">https://s3-ap-northeast-1.amazonaws.com/test-statics.a8.net/a8video/docs/index.html#_1</a></p>
+</blockquote>
 </div>
           </div>
         </div>
