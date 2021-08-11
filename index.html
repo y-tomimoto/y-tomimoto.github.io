@@ -508,8 +508,9 @@
 <pre><code>Java ＞＞ Python ＞＞＞＞ Node.js ＞ Kotlin
 </code></pre><h4 id="java">Java</h4>
 <p>DDDによる設計手法を理解し、実装に落とし込むことができる。また、エラーハンドリングや、ロギング・外部通知についても、基本的なアプリケーションに期待する要件を満たすレベルで実装することができる。</p>
-<p>実務ではSpring Bootによる開発経験が多く、Multi Projectsの構成としたり、Spring Securityを応用した任意の認証方式を実装することもできる。</p>
-<p>ただし、いづれもAPIの開発であり、Thymeleaf 等を通じてフロントを構成した経験は浅いため、これから深めていく必要がある。</p>
+<p>実務ではSpring Bootによる開発経験が多く、Gradle を通じて Multi Projectsの構成としたり、Spring Securityを応用し、マルチテナントを対象とした認証方式を実装することもできる。</p>
+<p>また、Flywayを通じたSchemaのバージョン管理についても概念を理解し、利用することができる。</p>
+<p>ただし、いづれもAPIの開発であり、Thymeleaf 等を通じてフロントを構成した経験は浅いため、xmlによるフロントの構成については、これから理解を深めていく必要がある。</p>
 <h4 id="python">Python</h4>
 <p>DDDによる設計手法を理解し、実装に落とし込むことができる。また、エラーハンドリングや、ロギング・外部通知についても、基本的なアプリケーションに期待する要件を満たすレベルで実装することができる。</p>
 <p>実務ではFlaskを用いた開発経験が多い。</p>
@@ -520,7 +521,7 @@
 <h2 id="infrastructure">Infrastructure</h2>
 <pre><code>AWS ＞＞＞＞ GCP
 </code></pre><h4 id="aws">AWS</h4>
-<p>EC2 の構築から、ALB による負荷分散、Route53での名前解決の設定など、アプリケーションを公開するために必要になる基礎的なサービスについては実務で経験がある。</p>
+<p>EC2 の構築から、ALB による負荷分散、Route53での名前解決の設定など、アプリケーションを公開するために必要になる基礎的なサービスについて、実務で経験がある。</p>
 <p>ECRでのimage管理 ~ ECSでのデプロイについて、既に構築されたデプロイフローを利用した経験はあるが、当該フローを構築したことはない。</p>
 <p>Lambda と APIGateway について、簡単な実務用 Bot の作成で触ったことがあり、概念は理解している。</p>
 <p>永続化に関して、RDS・DynamoDB についても、実務で採用したことがある。DynamoDBについては、オプション毎の料金体系を理解し、フェイルオーバー時の構成などを検討・構築したことがあるが、RDSを構築したことはまだなく、既存のものを利用する程度。</p>
@@ -533,7 +534,7 @@
 <h4 id="javascript">JavaScript</h4>
 <p>jsの基本的な動作については理解があるものの、Event Bubbling 等、一歩踏み込んだ仕様に関しては理解が浅い。</p>
 <h4 id="react">React</h4>
-<p>一度実務にて採用したことがある。なお、実務では State の管理に Redux を採用しており、Reactの基本的な概念とState Management については理解がある。</p>
+<p>一度実務にて採用したことがある。なお、実務では State の管理に Redux を採用しており、Reactの基本的な概念とState Management については理解がある。ComponentをLogicとUIで分割する等、簡単な設計はできるが、サービスのフロントをまるごと用意した経験はまだなく、これから経験を積む必要がある。</p>
 <h4 id="webpack">Webpack</h4>
 <p>1度実務にて採用したことがあるが、基本的なconfigを理解し、簡単なbuildが出来る程度。</p>
 
@@ -1119,9 +1120,9 @@
 <p>結果として功を奏した選定となったと思う。</p>
 <h2 id="amazon-aurora">Amazon Aurora</h2>
 <p>本人確認Statusを管理する必要があった。Status管理の性質として、Transactionが複雑になるケースがありそうだった点や、柔軟にクエリを利用したい点があったので、
-RDBを採用したい旨弊チームのテックリードに志願した。Amazon Aurora はテックリードに用意してもらった。</p>
+RDBを採用したい旨弊チームのテックリードに相談した。Amazon Aurora はテックリードの推奨により採用した。</p>
 <h1 id="heading6">成果</h1>
-<p>〆</p>
+<p>プロジェクトリリース後に記載予定。</p>
 </div>
           </div>
         </div>
@@ -1171,8 +1172,8 @@ RDBを採用したい旨弊チームのテックリードに志願した。Amazo
 <p>動画広告を描画するjsタグを用意し、そのタグを配置するだけで、ブログ上に動画広告が掲載されるタグを用意する。</p>
 <h1 id="heading4">担当工程</h1>
 <ol>
-<li>技術選定</li>
-<li>実装</li>
+<li>要件定義</li>
+<li>技術選定 ~ 実装</li>
 </ol>
 <h1 id="heading5">採用した技術</h1>
 <h2 id="react">React</h2>
@@ -1182,7 +1183,9 @@ RDBを採用したい旨弊チームのテックリードに志願した。Amazo
 <p>ex) 再生が開始したら、3秒後にコントローラをHideし、コントローラ内のボタンを停止に切り替え、動画を再生し、etc&hellip;</p>
 <p>プロダクトの性質上、Stateに応じてUIを描画するライブラリが適切かと思い、State管理手法で目立っていたReactに切り替え、実装を進めた。</p>
 <h1 id="heading6">成果</h1>
-<p>期待する成果物は出来たが、終盤、webpackによってbuildされたjsのサイズが大きかったため、Preactでリプレイスする等、サイズ圧縮する措置を取ることになった。</p>
+<p>正常にリリース済み。</p>
+<hr>
+<p>終盤、webpackによってbuildされたjsのサイズが大きかったため、Preactでリプレイスする等、サイズ圧縮する措置を取ることになった。</p>
 <p>予めサイズについてどの程度を許容するか考え、それに適したライブラリを選択すべきだったと思う。</p>
 <blockquote>
 <p>案内用に公開しているページ: <a href="https://s3-ap-northeast-1.amazonaws.com/test-statics.a8.net/a8video/docs/index.html#_1">https://s3-ap-northeast-1.amazonaws.com/test-statics.a8.net/a8video/docs/index.html#_1</a></p>
@@ -1242,7 +1245,7 @@ RDBを採用したい旨弊チームのテックリードに志願した。Amazo
 <li>技術選定(所属チームで議論)</li>
 <li>形態素解析のロジック考案・実装
 <img src="https://user-images.githubusercontent.com/31181316/94427508-29214580-01ca-11eb-9573-db6956f2e137.png" alt="image"></li>
-<li>ElasticSearchのテーブル設計・実装</li>
+<li>ElasticSearchのindex設計・実装</li>
 </ol>
 <h1 id="heading5">採用した技術</h1>
 <h2 id="elasticsearch">ElasticSearch</h2>

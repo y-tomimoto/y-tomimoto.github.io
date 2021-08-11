@@ -37,8 +37,9 @@
 &lt;pre&gt;&lt;code&gt;Java ＞＞ Python ＞＞＞＞ Node.js ＞ Kotlin
 &lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;java&#34;&gt;Java&lt;/h4&gt;
 &lt;p&gt;DDDによる設計手法を理解し、実装に落とし込むことができる。また、エラーハンドリングや、ロギング・外部通知についても、基本的なアプリケーションに期待する要件を満たすレベルで実装することができる。&lt;/p&gt;
-&lt;p&gt;実務ではSpring Bootによる開発経験が多く、Multi Projectsの構成としたり、Spring Securityを応用した任意の認証方式を実装することもできる。&lt;/p&gt;
-&lt;p&gt;ただし、いづれもAPIの開発であり、Thymeleaf 等を通じてフロントを構成した経験は浅いため、これから深めていく必要がある。&lt;/p&gt;
+&lt;p&gt;実務ではSpring Bootによる開発経験が多く、Gradle を通じて Multi Projectsの構成としたり、Spring Securityを応用し、マルチテナントを対象とした認証方式を実装することもできる。&lt;/p&gt;
+&lt;p&gt;また、Flywayを通じたSchemaのバージョン管理についても概念を理解し、利用することができる。&lt;/p&gt;
+&lt;p&gt;ただし、いづれもAPIの開発であり、Thymeleaf 等を通じてフロントを構成した経験は浅いため、xmlによるフロントの構成については、これから理解を深めていく必要がある。&lt;/p&gt;
 &lt;h4 id=&#34;python&#34;&gt;Python&lt;/h4&gt;
 &lt;p&gt;DDDによる設計手法を理解し、実装に落とし込むことができる。また、エラーハンドリングや、ロギング・外部通知についても、基本的なアプリケーションに期待する要件を満たすレベルで実装することができる。&lt;/p&gt;
 &lt;p&gt;実務ではFlaskを用いた開発経験が多い。&lt;/p&gt;
@@ -49,7 +50,7 @@
 &lt;h2 id=&#34;infrastructure&#34;&gt;Infrastructure&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;AWS ＞＞＞＞ GCP
 &lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;aws&#34;&gt;AWS&lt;/h4&gt;
-&lt;p&gt;EC2 の構築から、ALB による負荷分散、Route53での名前解決の設定など、アプリケーションを公開するために必要になる基礎的なサービスについては実務で経験がある。&lt;/p&gt;
+&lt;p&gt;EC2 の構築から、ALB による負荷分散、Route53での名前解決の設定など、アプリケーションを公開するために必要になる基礎的なサービスについて、実務で経験がある。&lt;/p&gt;
 &lt;p&gt;ECRでのimage管理 ~ ECSでのデプロイについて、既に構築されたデプロイフローを利用した経験はあるが、当該フローを構築したことはない。&lt;/p&gt;
 &lt;p&gt;Lambda と APIGateway について、簡単な実務用 Bot の作成で触ったことがあり、概念は理解している。&lt;/p&gt;
 &lt;p&gt;永続化に関して、RDS・DynamoDB についても、実務で採用したことがある。DynamoDBについては、オプション毎の料金体系を理解し、フェイルオーバー時の構成などを検討・構築したことがあるが、RDSを構築したことはまだなく、既存のものを利用する程度。&lt;/p&gt;
@@ -62,7 +63,7 @@
 &lt;h4 id=&#34;javascript&#34;&gt;JavaScript&lt;/h4&gt;
 &lt;p&gt;jsの基本的な動作については理解があるものの、Event Bubbling 等、一歩踏み込んだ仕様に関しては理解が浅い。&lt;/p&gt;
 &lt;h4 id=&#34;react&#34;&gt;React&lt;/h4&gt;
-&lt;p&gt;一度実務にて採用したことがある。なお、実務では State の管理に Redux を採用しており、Reactの基本的な概念とState Management については理解がある。&lt;/p&gt;
+&lt;p&gt;一度実務にて採用したことがある。なお、実務では State の管理に Redux を採用しており、Reactの基本的な概念とState Management については理解がある。ComponentをLogicとUIで分割する等、簡単な設計はできるが、サービスのフロントをまるごと用意した経験はまだなく、これから経験を積む必要がある。&lt;/p&gt;
 &lt;h4 id=&#34;webpack&#34;&gt;Webpack&lt;/h4&gt;
 &lt;p&gt;1度実務にて採用したことがあるが、基本的なconfigを理解し、簡単なbuildが出来る程度。&lt;/p&gt;
 </description>
