@@ -37,8 +37,8 @@
 &lt;pre&gt;&lt;code&gt;Java ＞＞ Python ＞＞＞＞ Node.js ＞ Kotlin
 &lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;java&#34;&gt;Java&lt;/h4&gt;
 &lt;p&gt;DDDによる設計手法を理解し、実装に落とし込むことができる。また、エラーハンドリングや、ロギング・外部通知についても、基本的なアプリケーションに期待する要件を満たすレベルで実装することができる。&lt;/p&gt;
-&lt;p&gt;実務ではSpring Bootによる開発経験が多く、Gradle を通じて Multi Projectsの構成としたり、Spring Securityを応用し、マルチテナントを対象とした認証方式を実装することもできる。&lt;/p&gt;
-&lt;p&gt;また、Flywayを通じたSchemaのバージョン管理についても概念を理解し、利用することができる。&lt;/p&gt;
+&lt;p&gt;実務ではSpring Bootによる開発経験が多く、Gradle を通じて Multi Projectsの構成としたり、Spring Securityを応用し、マルチテナントを対象とした認証方式を実装することもでき、Flywayを通じたSchemaのバージョン管理についても概念を理解し、利用することができる。&lt;/p&gt;
+&lt;p&gt;Struts で構築されたサービスの改修も何度か経験がある。&lt;/p&gt;
 &lt;p&gt;ただし、いづれもAPIの開発であり、Thymeleaf 等を通じてフロントを構成した経験は浅いため、xmlによるフロントの構成については、これから理解を深めていく必要がある。&lt;/p&gt;
 &lt;h4 id=&#34;python&#34;&gt;Python&lt;/h4&gt;
 &lt;p&gt;DDDによる設計手法を理解し、実装に落とし込むことができる。また、エラーハンドリングや、ロギング・外部通知についても、基本的なアプリケーションに期待する要件を満たすレベルで実装することができる。&lt;/p&gt;
