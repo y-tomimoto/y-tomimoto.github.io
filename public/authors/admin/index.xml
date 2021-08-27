@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>y-tomimoto</title>
+    <link>https://y-tomimoto.github.io/authors/admin/</link>
+      <atom:link href="https://y-tomimoto.github.io/authors/admin/index.xml" rel="self" type="application/rss+xml" />
+    <description>y-tomimoto</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 06 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://y-tomimoto.github.io/img/icon-192.png</url>
+      <title>y-tomimoto</title>
+      <link>https://y-tomimoto.github.io/authors/admin/</link>
+    </image>
+    
+    <item>
+      <title>Spring Security for API Key</title>
+      <link>https://y-tomimoto.github.io/post/spring-security/</link>
+      <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://y-tomimoto.github.io/post/spring-security/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://qiita.com/y_tom/items/3a1c0c9396d9ee4a3b5a&#34;&gt;https://qiita.com/y_tom/items/3a1c0c9396d9ee4a3b5a&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>CleanArchitecture with Python</title>
+      <link>https://y-tomimoto.github.io/post/cleanarchitecture/</link>
+      <pubDate>Mon, 28 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>https://y-tomimoto.github.io/post/cleanarchitecture/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://qiita.com/y_tom/items/ac6f6a08bdc374336dc4&#34;&gt;https://qiita.com/y_tom/items/ac6f6a08bdc374336dc4&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An example preprint / working paper</title>
+      <link>https://y-tomimoto.github.io/publication/preprint/</link>
+      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>https://y-tomimoto.github.io/publication/preprint/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An example journal article</title>
+      <link>https://y-tomimoto.github.io/publication/journal-article/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>https://y-tomimoto.github.io/publication/journal-article/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An example conference paper</title>
+      <link>https://y-tomimoto.github.io/publication/conference-paper/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      <guid>https://y-tomimoto.github.io/publication/conference-paper/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,1803 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.6.2">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Yusuke Tomimoto">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Developer">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://y-tomimoto.github.io/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="y-tomimoto">
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon-32.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://y-tomimoto.github.io/">
+
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="y-tomimoto">
+  <meta property="og:url" content="https://y-tomimoto.github.io/">
+  <meta property="og:title" content="y-tomimoto">
+  <meta property="og:description" content="Developer"><meta property="og:image" content="https://y-tomimoto.github.io/img/icon-192.png">
+  <meta property="twitter:image" content="https://y-tomimoto.github.io/img/icon-192.png"><meta property="og:locale" content="en-us">
+  
+    <meta property="og:updated_time" content="2030-06-01T13:00:00&#43;00:00">
+  
+
+  
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://y-tomimoto.github.io/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "url": "https://y-tomimoto.github.io/"
+}
+</script>
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>y-tomimoto</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    
+    
+      <a class="navbar-brand" href="/">y-tomimoto</a>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about" data-target="#about"><span>About</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts" data-target="#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#jobdescriptions" data-target="#jobdescriptions"><span>Job Descriptions</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact" data-target="#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item">
+        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  
+
+
+
+
+
+
+
+
+
+<span class="js-widget-page d-none"></span>
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="about" class="home-section wg-about   "  >
+    <div class="container">
+      
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+<div class="row">
+  <div class="col-12 col-lg-4">
+    <div id="profile">
+
+      
+      
+      <img class="portrait" src="/authors/admin/avatar_hu3395e2477b2377baeb8b8b2a5294ab1d_1539_250x250_fill_q90_lanczos_center.jpg" alt="Avatar">
+      
+
+      <div class="portrait-title">
+        <h2>Yusuke Tomimoto</h2>
+        <h3>Developer</h3>
+
+        
+      </div>
+
+      <ul class="network-icon" aria-hidden="true">
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a href="/#contact" >
+            <i class="fas fa-envelope big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a href="https://github.com/y-tomimoto" target="_blank" rel="noopener">
+            <i class="fab fa-github big-icon"></i>
+          </a>
+        </li>
+        
+      </ul>
+
+    </div>
+  </div>
+  <div class="col-12 col-lg-8">
+
+    
+    <h1>Biography</h1>
+
+    <p><em>last updated: 20210810</em></p>
+<p>広告業界で働くエンジニア。</p>
+<p>サーバーサイドがメインだが、インフラやフロントも触ることがある。</p>
+<p>趣味は深夜ラジオを聞くことで、ラジオを聞きながら家事をするのが楽しみ。</p>
+<h1 id="output">Output</h1>
+<h2 id="github">Github</h2>
+<blockquote>
+<p><a href="https://github.com/y-tomimoto">https://github.com/y-tomimoto</a></p>
+<p><!-- raw HTML omitted --><img src="https://user-images.githubusercontent.com/31181316/94432704-1c085480-01d2-11eb-8d0d-f1fd62893f34.png" alt="image"></p>
+</blockquote>
+<h2 id="articles">Articles</h2>
+<blockquote>
+<p><a href="https://qiita.com/y_tom">https://qiita.com/y_tom</a></p>
+<p><!-- raw HTML omitted --><img src="https://user-images.githubusercontent.com/31181316/128854820-2abce8b3-2d4a-4fb8-8205-4c6e0dea06c1.png" alt="image"></p>
+</blockquote>
+<h1 id="experienced">Experienced</h1>
+<h2 id="backend">Backend</h2>
+<pre><code>Java ＞＞ Python ＞＞＞＞ Node.js ＞ Kotlin
+</code></pre><h4 id="java">Java</h4>
+<p>DDDによる設計手法を理解し、実装に落とし込むことができる。また、エラーハンドリングや、ロギング・外部通知についても、基本的なアプリケーションに期待する要件を満たすレベルで実装することができる。</p>
+<p>実務ではSpring Bootによる開発経験が多く、Gradle を通じて Multi Projectsの構成としたり、Spring Securityを応用し、マルチテナントを対象とした認証方式を実装することもでき、Flywayを通じたSchemaのバージョン管理についても概念を理解し、利用することができる。</p>
+<p>Struts で構築されたサービスの改修も何度か経験がある。</p>
+<p>ただし、いづれもAPIの開発であり、Thymeleaf 等を通じてフロントを構成した経験は浅いため、xmlによるフロントの構成については、これから理解を深めていく必要がある。</p>
+<h4 id="python">Python</h4>
+<p>DDDによる設計手法を理解し、実装に落とし込むことができる。また、エラーハンドリングや、ロギング・外部通知についても、基本的なアプリケーションに期待する要件を満たすレベルで実装することができる。</p>
+<p>実務ではFlaskを用いた開発経験が多い。</p>
+<h4 id="nodejs">Node.js</h4>
+<p>実務での開発経験が1度ある。基本的な Web アプリケーションを用意することはできるが、Node.jsの実行環境についての理解はこれから深めていく必要がある。</p>
+<h4 id="kotlin">Kotlin</h4>
+<p>文法を理解し、個人開発で触っている程度。</p>
+<h2 id="infrastructure">Infrastructure</h2>
+<pre><code>AWS ＞＞＞＞ GCP
+</code></pre><h4 id="aws">AWS</h4>
+<p>EC2 の構築から、ALB による負荷分散、Route53での名前解決の設定など、アプリケーションを公開するために必要になる基礎的なサービスについて、実務で経験がある。</p>
+<p>ECRでのimage管理 ~ ECSでのデプロイについて、既に構築されたデプロイフローを利用した経験はあるが、当該フローを構築したことはない。</p>
+<p>Lambda と APIGateway について、簡単な実務用 Bot の作成で触ったことがあり、概念は理解している。</p>
+<p>永続化に関して、RDS・DynamoDB についても、実務で採用したことがある。DynamoDBについては、オプション毎の料金体系を理解し、フェイルオーバー時の構成などを検討・構築したことがあるが、RDSを構築したことはまだなく、既存のものを利用する程度。</p>
+<p>S3とCloudFrontに関しては実務で利用したことがあり、基本的な利用ができる程度。</p>
+<p>IAM の発行・付与や、VPC の構築などはやったことがなく、概念を理解している程度。</p>
+<p>CloudWatch等、監視にまつわるサービスについては理解が浅く、これから理解を深める必要がある。</p>
+<h4 id="gcp">GCP</h4>
+<p>1度実務にて触った経験があるが、GCE を構築し、負荷分散を敷く程度。</p>
+<h2 id="frontend">Frontend</h2>
+<h4 id="javascript">JavaScript</h4>
+<p>jsの基本的な動作については理解があるものの、Event Bubbling 等、一歩踏み込んだ仕様に関しては理解が浅い。</p>
+<h4 id="react">React</h4>
+<p>一度実務にて採用したことがある。なお、実務では State の管理に Redux を採用しており、Reactの基本的な概念とState Management については理解がある。ComponentをLogicとUIで分割する等、簡単な設計はできるが、サービスのフロントをまるごと用意した経験はまだなく、これから経験を積む必要がある。</p>
+<h4 id="webpack">Webpack</h4>
+<p>1度実務にて採用したことがあるが、基本的なconfigを理解し、簡単なbuildが出来る程度。</p>
+
+
+    <div class="row">
+
+      
+      <div class="col-md-5">
+        <h3>Interests</h3>
+        <ul class="ul-interests">
+          
+          <li>Android</li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="col-md-7">
+        <h3>Education</h3>
+        <ul class="ul-edu fa-ul">
+          
+          <li>
+            <i class="fa-li fas fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course">経済学部 経済学科, 2017</p>
+              <p class="institution">上智大学</p>
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+    </div>
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="posts" class="home-section wg-pages   "  >
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+<div class="row">
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>Recent Posts</h1>
+    
+  </div>
+  <div class="col-12 col-lg-8">
+
+    
+
+    
+      
+        
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/post/spring-security/" >Spring Security for API Key</a>
+    </h3>
+
+    
+    <div class="article-style">
+      <a href="https://qiita.com/y_tom/items/3a1c0c9396d9ee4a3b5a">https://qiita.com/y_tom/items/3a1c0c9396d9ee4a3b5a</a>
+    </div>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+        
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  
+  <span><a href="/authors/admin/">Yusuke Tomimoto</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Aug 6, 2021
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    1 min read
+  </span>
+  
+
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="">解説</a></span>
+  
+
+</div>
+
+      
+    </div>
+
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/post/spring-security/" >
+      <img src="/post/spring-security/featured_hu1ad7e586535c9e1888f2ef28b94a63a1_422_150x0_resize_lanczos_2.png" alt="">
+    </a>
+    
+  </div>
+</div>
+
+      
+    
+      
+        
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/post/cleanarchitecture/" >CleanArchitecture with Python</a>
+    </h3>
+
+    
+    <div class="article-style">
+      <a href="https://qiita.com/y_tom/items/ac6f6a08bdc374336dc4">https://qiita.com/y_tom/items/ac6f6a08bdc374336dc4</a>
+    </div>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+        
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  
+  <span><a href="/authors/admin/">Yusuke Tomimoto</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Sep 28, 2020
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    1 min read
+  </span>
+  
+
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="">解説</a></span>
+  
+
+</div>
+
+      
+    </div>
+
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/post/cleanarchitecture/" >
+      <img src="/post/cleanarchitecture/featured_hu1ad7e586535c9e1888f2ef28b94a63a1_426_150x0_resize_lanczos_2.png" alt="">
+    </a>
+    
+  </div>
+</div>
+
+      
+    
+
+    
+
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="experience" class="home-section wg-experience   "  >
+    <div class="container">
+      
+
+
+
+<div class="row">
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>Experience</h1>
+    
+  </div>
+  <div class="col-12 col-lg-8">
+    
+
+    
+    
+    
+    <div class="row experience">
+      
+      <div class="col-auto text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col ">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="m-2">
+          <span class="badge badge-pill border exp-fill">&nbsp;</span>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+      
+      <div class="col py-2">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title exp-title text-muted mt-0 mb-1">Developer</h4>
+            <h4 class="card-title exp-company text-muted my-0"><a href="https://www.fancs.com/" target="_blank" rel="noopener">ファンコミュニケーションズ株式会社</a></h4>
+            <div class="text-muted exp-meta">
+              Sep 2018 –
+              
+                Present
+              
+              
+                <span class="middot-divider"></span>
+                <span>Shibuya,Tokyo</span>
+              
+            </div>
+            <div class="card-text"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row experience">
+      
+      <div class="col-auto text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="m-2">
+          <span class="badge badge-pill border ">&nbsp;</span>
+        </div>
+        <div class="row h-50">
+          <div class="col ">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+      
+      <div class="col py-2">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title exp-title text-muted mt-0 mb-1">Logistics Manager</h4>
+            <h4 class="card-title exp-company text-muted my-0"><a href="https://www.pola.co.jp/company/" target="_blank" rel="noopener">株式会社ポーラ</a></h4>
+            <div class="text-muted exp-meta">
+              Apr 2017 –
+              
+                Aug 2018
+              
+              
+                <span class="middot-divider"></span>
+                <span>Shinagawa,Tokyo</span>
+              
+            </div>
+            <div class="card-text"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="jobdescriptions" class="home-section wg-experience   "  >
+    <div class="container">
+      
+
+
+
+<div class="row">
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>Recent Job Descriptions</h1>
+    
+  </div>
+  <div class="col-12 col-lg-8">
+    
+
+    
+    
+    
+    <div class="row experience">
+      
+      <div class="col-auto text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col ">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="m-2">
+          <span class="badge badge-pill border exp-fill">&nbsp;</span>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+      
+      <div class="col py-2">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title exp-title text-muted mt-0 mb-1">本人確認機能を提供するプロジェクト</h4>
+            <h4 class="card-title exp-company text-muted my-0">Position: Developer &amp; Project Manager</h4>
+            <div class="text-muted exp-meta">
+              Mar 2021 –
+              
+                Present
+              
+              
+                <span class="middot-divider"></span>
+                <span>public</span>
+              
+            </div>
+            <div class="card-text"><h1 id="heading">前提</h1>
+<p>アフィリエイトサービスを提供している組織でのプロジェクト。</p>
+<p>様々な企業が、アフィリエイトサービス上に宣伝して欲しい商材を掲載し、
+アフィリエイトサービス上を掲載されている商材をブロガーが自身のブログに掲載する。</p>
+<p>ブログ上に掲載された商材が購入された場合、ブロガーに対して、商材提供元の企業が成果報酬を支払うというビジネスモデルとなっている。</p>
+<h1 id="heading1">背景</h1>
+<p>近年、誇大広告等の、消費者が不利益を被る文言を掲載するブログが増加しつつある。</p>
+<p>組織として、これらの不正防止の観点から、アフィリエイトサービスを利用するブロガーに対して、本人確認機能を提供することとなった。</p>
+<h1 id="heading2">理想</h1>
+<p>本人確認機能の提供</p>
+<h1 id="heading3">手法</h1>
+<p>外部のe-KYCサービスを採用し、その本人確認結果をサービス内に反映する。</p>
+<p>※ 設計は非公開</p>
+<!-- raw HTML omitted -->
+<h1 id="heading4">担当工程</h1>
+<ol>
+<li>要求定義</li>
+<li>要件定義</li>
+<li>外部サービスの選定及び見積もり~決済</li>
+<li>実装(上記EntryPoint Instance ・Result Fetch Instance)</li>
+</ol>
+<h1 id="heading5">採用した技術</h1>
+<h2 id="spring-boot">Spring Boot</h2>
+<p>[選定理由]</p>
+<p>　
+自身を含め計2名での開発であり、一方のメンバーがSpring Bootの経験があったため、言語を揃え、レビューやノウハウの共有の観点から、Spring Bootを採用する経緯となった。
+　</p>
+<p>複数のComponentによって構成されるため、PullRequestの影響範囲の確認や、domainの再利用等を考慮し、Multi Projects の構成を取りたかった点で、Gradleが適していたり、</p>
+<p>外部e-KYCサービスを、組織内の複数のサービスから参照すべく、マルチテナント構成としたかった。その際、Spring Securityによるアクセス制御が有効であり、</p>
+<p>結果として功を奏した選定となったと思う。</p>
+<h2 id="amazon-aurora">Amazon Aurora</h2>
+<p>本人確認Statusを管理する必要があった。Status管理の性質として、Transactionが複雑になるケースがありそうだった点や、柔軟にクエリを利用したい点があったので、
+RDBを採用したい旨弊チームのテックリードに相談した。Amazon Aurora はテックリードの推奨により採用した。</p>
+<h1 id="heading6">成果</h1>
+<p>プロジェクトリリース後に記載予定。</p>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row experience">
+      
+      <div class="col-auto text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="m-2">
+          <span class="badge badge-pill border ">&nbsp;</span>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+      
+      <div class="col py-2">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title exp-title text-muted mt-0 mb-1">動画広告を提供するプロジェクト</h4>
+            <h4 class="card-title exp-company text-muted my-0">Position: Developer</h4>
+            <div class="text-muted exp-meta">
+              Aug 2020 –
+              
+                Dec 2020
+              
+              
+                <span class="middot-divider"></span>
+                <span>public</span>
+              
+            </div>
+            <div class="card-text"><h1 id="heading">前提</h1>
+<p>同上</p>
+<h1 id="heading1">背景</h1>
+<p>SNSでも動画広告が主流となっているように、ブログでも動画広告が主流となりつつある。</p>
+<p>それに向け、動画広告の提供を開始することとなった。</p>
+<p><img src="https://user-images.githubusercontent.com/31181316/128892388-1e577b8c-5dae-4d37-9ab8-f03ad4c4b881.png" alt="image"></p>
+<h1 id="heading2">理想</h1>
+<p>動画広告を提供できるようにする</p>
+<h1 id="heading3">手法</h1>
+<p>動画広告を描画するjsタグを用意し、そのタグを配置するだけで、ブログ上に動画広告が掲載されるタグを用意する。</p>
+<h1 id="heading4">担当工程</h1>
+<ol>
+<li>要件定義</li>
+<li>技術選定 ~ 実装</li>
+</ol>
+<h1 id="heading5">採用した技術</h1>
+<h2 id="react">React</h2>
+<p>［採用理由］</p>
+<p>Video.js というvideo player用のOpen Sourceの採用を検討したものが、UIや機能等カスタムを検討した場合に嵌りそうだったので、pure jsでVideo.jsの簡易版を用意してみた。</p>
+<p>その際、1つのeventに対して、複数のUIを変更する必要があった。</p>
+<p>ex) 再生が開始したら、3秒後にコントローラをHideし、コントローラ内のボタンを停止に切り替え、動画を再生し、etc&hellip;</p>
+<p>プロダクトの性質上、Stateに応じてUIを描画するライブラリが適切かと思い、State管理手法で目立っていたReactに切り替え、実装を進めた。</p>
+<h1 id="heading6">成果</h1>
+<p>正常にリリース済み。</p>
+<hr>
+<p>終盤、webpackによってbuildされたjsのサイズが大きかったため、Preactでリプレイスする等、サイズ圧縮する措置を取ることになった。</p>
+<p>予めサイズについてどの程度を許容するか考え、それに適したライブラリを選択すべきだったと思う。</p>
+<blockquote>
+<p>案内用に公開しているページ: <a href="https://s3-ap-northeast-1.amazonaws.com/test-statics.a8.net/a8video/docs/index.html#_1">https://s3-ap-northeast-1.amazonaws.com/test-statics.a8.net/a8video/docs/index.html#_1</a></p>
+</blockquote>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row experience">
+      
+      <div class="col-auto text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="m-2">
+          <span class="badge badge-pill border ">&nbsp;</span>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+      
+      <div class="col py-2">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title exp-title text-muted mt-0 mb-1">広告の検索精度を改善するプロジェクト</h4>
+            <h4 class="card-title exp-company text-muted my-0">Position: Developer</h4>
+            <div class="text-muted exp-meta">
+              Feb 2020 –
+              
+                Jul 2020
+              
+              
+                <span class="middot-divider"></span>
+                <span>public</span>
+              
+            </div>
+            <div class="card-text"><h1 id="heading">前提</h1>
+<p>同上</p>
+<h1 id="heading1">背景</h1>
+<ol>
+<li>商材に関するデータは、OracleDB内に格納されている。</li>
+<li>ブロガーが商材を検索する際は、検索ワードを元に、LIKE検索を実行するクエリをOracleDBに対して実行し、検索結果を表示している。</li>
+</ol>
+<p><img src="https://user-images.githubusercontent.com/31181316/94425655-40126880-01c7-11eb-91ff-97d05015ea7b.png" alt="image"></p>
+<h1 id="heading2">理想</h1>
+<p><strong>現行のLIKE検索より、検索精度の高い検索を実現したい</strong></p>
+<h1 id="heading3">手法</h1>
+<p>ElasticSearchを導入し、OracleDB内に格納されているデータをElasticSearchに同期させ、検索クエリの実行先をElasticSearchに切り替える。(下図には、後述するプロジェクトに関するComponentも記載されている)</p>
+<p><img src="https://user-images.githubusercontent.com/31181316/102949056-ac70df80-450a-11eb-8a18-cd20955ae7fc.png" alt="image"></p>
+<h1 id="heading4">担当工程</h1>
+<ol>
+<li>技術選定(所属チームで議論)</li>
+<li>形態素解析のロジック考案・実装
+<img src="https://user-images.githubusercontent.com/31181316/94427508-29214580-01ca-11eb-9573-db6956f2e137.png" alt="image"></li>
+<li>ElasticSearchのindex設計・実装</li>
+</ol>
+<h1 id="heading5">採用した技術</h1>
+<h2 id="elasticsearch">ElasticSearch</h2>
+<p>検索精度の向上を目的として採用されていることが多かった、<code>ElasticSearch</code>(以降ESと呼ぶ) か、<code>ES</code>と比較されやすい<code>Solr</code>　を比較し、結果 <code>ES</code> を採用した。</p>
+<p>［採用理由］</p>
+<ol>
+<li>
+<p>柔軟に検索ロジック  の構築をしたいので、plugin が豊富で簡単に拡張できる ES が良さそうだった。一応調査したが、Solr の場合は、Pluginを用意するために、 Jar ファイルを都度用意する必要があり、めんどくさそうだった。</p>
+</li>
+<li>
+<p>BI ツール及び、GUI として kibanaがあるのがかなり、魅力的だった。振り返ってみるとテストデータの投入や、クエリ作成など kibana によってとても捗った。solr にも banana という BI ツールがあるらしいが、個人的に kibana のほうが UI は素敵だった。</p>
+</li>
+<li>
+<p>同様の MarketPlace 構築に向け GMO が ES を採用、また、マッチングアプリや、グルメサイト等も ES を採用しており、技術的に参照できそうなドキュメントが多かった。</p>
+<blockquote>
+<p><a href="https://www.slideshare.net/ssuser7eadbf/elasticsearch-sudachi">https://www.slideshare.net/ssuser7eadbf/elasticsearch-sudachi</a></p>
+</blockquote>
+</li>
+</ol>
+<h1 id="heading6">成果</h1>
+<p>OracleDBからESにデータを同期するために、ESで公式に推奨されているlogstashを利用することを検討している。</p>
+<p>プロジェクトに着手していた当時、別チームにてOracleDBの移行プロジェクトが同時進行していたため、データの同期自体は次回のマイルストーンとして設定し、データを受け入れるESのみを構築し、プロジェクトを完了した。データの同期を完了することで、検索精度の改善が見込まれる。</p>
+<blockquote>
+<p><a href="https://www.elastic.co/jp/blog/how-to-keep-elasticsearch-synchronized-with-a-relational-database-using-logstash">https://www.elastic.co/jp/blog/how-to-keep-elasticsearch-synchronized-with-a-relational-database-using-logstash</a></p>
+</blockquote>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row experience">
+      
+      <div class="col-auto text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="m-2">
+          <span class="badge badge-pill border ">&nbsp;</span>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+      
+      <div class="col py-2">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title exp-title text-muted mt-0 mb-1">広告に関するデータ構造を拡張するプロジェクト</h4>
+            <h4 class="card-title exp-company text-muted my-0">Position: Developper</h4>
+            <div class="text-muted exp-meta">
+              Feb 2020 –
+              
+                Jul 2020
+              
+              
+                <span class="middot-divider"></span>
+                <span>public</span>
+              
+            </div>
+            <div class="card-text"><h1 id="heading">前提</h1>
+<p>同上</p>
+<h1 id="heading1">背景</h1>
+<p>アフィリエイトサービス上に登録されている広告データには2パターンある。</p>
+<ol>
+<li>広告データ: 商材 = 1:1 のパターン</li>
+<li>広告データ: 商材 = 1:n のパターン</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>広告データ</th>
+<th>商材</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>夏が来た!特製青汁!</td>
+<td>特製青汁</td>
+</tr>
+<tr>
+<td>2</td>
+<td>夏が来た!トレーニングの季節!</td>
+<td>ダンベル,プロテイン,トレーニングウェア,etc &hellip;</td>
+</tr>
+</tbody>
+</table>
+<p>現在は、データ構造として、広告データのみを管理しており、商材に関するデータを持たない。</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>広告データ</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>夏が来た!特製青汁!</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>夏が来た!トレーニングの季節!</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="heading2">理想</h1>
+<p>データ構造に商材データが紐付いている状態</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>広告データ</th>
+<th>商材</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>夏が来た!特製青汁!</td>
+<td>特製青汁</td>
+</tr>
+<tr>
+<td>2</td>
+<td>夏が来た!トレーニングの季節!</td>
+<td>ダンベル,プロテイン,トレーニングウェア,etc &hellip;</td>
+</tr>
+</tbody>
+</table>
+<h1 id="heading3">担当工程</h1>
+<ol>
+<li>データフローの考案(所属チームにて議論)</li>
+<li>技術選定</li>
+<li>実装(データフロー④の部分)</li>
+</ol>
+<h1 id="heading4">手法</h1>
+<p>直近のプロジェクトにてElasticSearchを導入している。</p>
+<p>検索時のクエリはElasticSearchに発行されるため、ElasticSearch内に商品データに関するテーブルを用意する。</p>
+<p>検索クエリを受け取った際は、広告データに商品データを紐付けた状態で検索結果を返す。</p>
+<p><img src="https://user-images.githubusercontent.com/31181316/102949056-ac70df80-450a-11eb-8a18-cd20955ae7fc.png" alt="image"></p>
+<h1 id="heading5">データフロー</h1>
+<p>①掲載元企業は商材データが記載されたファイルを <code>Data Uploader</code> を通じてアップロードする</p>
+<p>②<code>Data Uploader</code> は受け取ったファイルをStorageにPoolする</p>
+<p>③<code>Data Uploader</code> はPoolが完了した際、アップロード済みステータスを登録する</p>
+<p>④<code>Insert Worker</code>は、アップロード済みステータスを検知し、商材データが記載されたファイルを解析・ESの投入に適した形式に変換し、ESに投入する。</p>
+<h1 id="heading6">採用した技術</h1>
+<h2 id="python">Python</h2>
+<p>［採用理由］</p>
+<p>広告の掲載元となる企業は、様々なデータフォーマットで自社の商材データを管理している。</p>
+<p>ESにフォーマットの異なるデータを投入する前に、データフォーマットを統一して、ESに投入するための Adapter Component を実装する必要があった。</p>
+<p>これらのデータフォーマットを整える際、Pandasを使いたかったので、Pythonを採用した。</p>
+<h1 id="heading7">成果</h1>
+<p>同上</p>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row experience">
+      
+      <div class="col-auto text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="m-2">
+          <span class="badge badge-pill border ">&nbsp;</span>
+        </div>
+        <div class="row h-50">
+          <div class="col ">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+      
+      <div class="col py-2">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title exp-title text-muted mt-0 mb-1">暗号化APIを開発するプロジェクト</h4>
+            <h4 class="card-title exp-company text-muted my-0">Position: Developper</h4>
+            <div class="text-muted exp-meta">
+              Nov 2019 –
+              
+                Jan 2020
+              
+              
+                <span class="middot-divider"></span>
+                <span>public</span>
+              
+            </div>
+            <div class="card-text"><h1 id="heading">前提</h1>
+<p>同上</p>
+<h1 id="heading1">背景</h1>
+<p>アフィリエイトサービスでは、URL内にクエリパラメータを付与することで、個人を識別する仕組みを実現している。</p>
+<p>ex) https://affiliate/index.html?user_name=田中太郎</p>
+<p>アフィリエイトサービスを複数利用している会社は、このURL内に、複数社分のクエリパラメータが付与され、URLが長くなってしまう。</p>
+<p>ex) https://affiliate/index.html?companyA_user_name=田中太郎&amp;companyB_user_name=田中太郎&amp;companyC_user_name=&hellip;</p>
+<p>URLはBrowserごとに最大文字数が決まっており、それ以上の文字数になると、自動的にURLをカットされてしまう。</p>
+<p>ex) https://affiliate/index.html?companyA_user_name=田中太郎&amp;companyB_user_name=田中太郎&amp;companyC_user_name=&hellip;companyZ_us(ここで終わり)</p>
+<p>そのため、他社への影響を押さえるため、自社のクエリパラメータを、暗号化することとした。</p>
+<pre><code>- companyA_user_name=田中太郎(実際はもっと長い)
++ companyA_user_name=XSGW1GSB
+</code></pre><h1 id="heading2">手法</h1>
+<p>発行されたクエリパラメータを暗号化してURLに付与し、コンバージョン(アフィリエイトが成立)の際は、暗号化したキーをクエリパラメータに戻して、既存の成果発生処理プロセスに流す。</p>
+<h1 id="heading3">担当工程</h1>
+<p>要件定義〜実装まで</p>
+<h2 id="heading4">採用した技術</h2>
+<h2 id="aws-dynamodb">AWS DynamoDB</h2>
+<p>［採用理由］</p>
+<ol>
+<li>暗号化の性質上、データ形式が1:1であったこと</li>
+<li>複雑なトランザクションも想定されなかったこと</li>
+</ol>
+<p>から、NoSQLを採用することにした。</p>
+<p>AWSを触っていたこともあり、NoSQLの中でも、DynamoDBを採用した。オートスケールに加え、レプリケーションやfailoverを自動で再現してくれる点も、運用コストを下げられそうだったので、嬉しかった。</p>
+<h2 id="nodejs">Node.js</h2>
+<p>［採用理由］</p>
+<p>シンプルなアプリケーションであったため、aws-sdkがサポートしている言語(DynamoDBを採用するため)内で、お手軽なNode.jsを採用した。
+　</p>
+<h1 id="heading5">成果</h1>
+<p>課題を解決済み。正常に動作している。</p>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="tags" class="home-section wg-tag-cloud   "  >
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<div class="row">
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>Popular Topics</h1>
+    
+  </div>
+  <div class="col-12 col-lg-8">
+    
+
+    
+
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="contact" class="home-section wg-contact   "  >
+    <div class="container">
+      
+
+
+
+
+
+<div class="row contact-widget">
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>Contact</h1>
+    
+  </div>
+  <div class="col-12 col-lg-8">
+    
+
+    
+
+    <ul class="fa-ul">
+
+      
+      <li>
+        <i class="fa-li fas fa-envelope fa-2x" aria-hidden="true"></i>
+        <span id="person-email"><a href="mailto:geektomimoto0104@gmail.com">geektomimoto0104@gmail.com</a></span>
+      </li>
+      
+
+      
+
+      
+      
+
+      
+
+      
+
+      
+
+      
+      
+
+    </ul>
+
+    
+
+  </div>
+</div>
+
+    </div>
+  </section>
+
+
+
+      
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.bcfae8267aba63cc55af53a503896bd9.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

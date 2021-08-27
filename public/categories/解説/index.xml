@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>解説 | y-tomimoto</title>
+    <link>https://y-tomimoto.github.io/categories/%E8%A7%A3%E8%AA%AC/</link>
+      <atom:link href="https://y-tomimoto.github.io/categories/%E8%A7%A3%E8%AA%AC/index.xml" rel="self" type="application/rss+xml" />
+    <description>解説</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 06 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://y-tomimoto.github.io/img/icon-192.png</url>
+      <title>解説</title>
+      <link>https://y-tomimoto.github.io/categories/%E8%A7%A3%E8%AA%AC/</link>
+    </image>
+    
+    <item>
+      <title>Spring Security for API Key</title>
+      <link>https://y-tomimoto.github.io/post/spring-security/</link>
+      <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://y-tomimoto.github.io/post/spring-security/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://qiita.com/y_tom/items/3a1c0c9396d9ee4a3b5a&#34;&gt;https://qiita.com/y_tom/items/3a1c0c9396d9ee4a3b5a&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>CleanArchitecture with Python</title>
+      <link>https://y-tomimoto.github.io/post/cleanarchitecture/</link>
+      <pubDate>Mon, 28 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>https://y-tomimoto.github.io/post/cleanarchitecture/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://qiita.com/y_tom/items/ac6f6a08bdc374336dc4&#34;&gt;https://qiita.com/y_tom/items/ac6f6a08bdc374336dc4&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
