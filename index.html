@@ -488,7 +488,7 @@
     
     <h1>Biography</h1>
 
-    <p><em>last updated: 20210810</em></p>
+    <p><em>last updated: 20210924</em></p>
 <p>広告業界で働くエンジニア。</p>
 <p>サーバーサイドがメインだが、インフラやフロントも触ることがある。</p>
 <p>趣味は深夜ラジオを聞くことで、ラジオを聞きながら家事をするのが楽しみ。</p>
@@ -507,12 +507,12 @@
 <h2 id="backend">Backend</h2>
 <pre tabindex="0"><code>Java ＞＞ Python ＞＞＞＞ Node.js ＞ Kotlin
 </code></pre><h4 id="java">Java</h4>
-<p>DDDによる設計手法を理解し、実装に落とし込むことができる。また、エラーハンドリングや、ロギング・外部通知についても、基本的なアプリケーションに期待する要件を満たすレベルで実装することができる。</p>
-<p>実務ではSpring Bootによる開発経験が多く、Gradle を通じて Multi Projectsの構成としたり、Spring Securityを応用し、マルチテナントを対象とした認証方式を実装することもでき、Flywayを通じたSchemaのバージョン管理についても概念を理解し、利用することができる。</p>
+<p>基本的なアプリケーションに期待する要件を満たすレベルで実装することができる。</p>
+<p>実務ではSpring Bootによる開発経験が多く、Gradle を通じて Multi Projects 構成とした経験や、Spring Securityを用いて独自の認証方式を実装した経験もある。Flywayを通じたSchemaのバージョン管理についても概念を理解し、利用することができる。</p>
 <p>Struts で構築されたサービスの改修も何度か経験がある。</p>
 <p>ただし、いづれもAPIの開発であり、Thymeleaf 等を通じてフロントを構成した経験は浅いため、xmlによるフロントの構成については、これから理解を深めていく必要がある。</p>
 <h4 id="python">Python</h4>
-<p>DDDによる設計手法を理解し、実装に落とし込むことができる。また、エラーハンドリングや、ロギング・外部通知についても、基本的なアプリケーションに期待する要件を満たすレベルで実装することができる。</p>
+<p>基本的なアプリケーションに期待する要件を満たすレベルで実装することができる。</p>
 <p>実務ではFlaskを用いた開発経験が多い。</p>
 <h4 id="nodejs">Node.js</h4>
 <p>実務での開発経験が1度ある。基本的な Web アプリケーションを用意することはできるが、Node.jsの実行環境についての理解はこれから深めていく必要がある。</p>
@@ -522,9 +522,10 @@
 <pre tabindex="0"><code>AWS ＞＞＞＞ GCP
 </code></pre><h4 id="aws">AWS</h4>
 <p>EC2 の構築から、ALB による負荷分散、Route53での名前解決の設定など、アプリケーションを公開するために必要になる基礎的なサービスについて、実務で経験がある。</p>
-<p>ECRでのimage管理 ~ ECSでのデプロイについて、既に構築されたデプロイフローを利用した経験はあるが、当該フローを構築したことはない。</p>
+<p>ECRでのimage管理 ~ ECSを通じたデプロイの経験がある。
+ただし、既に構築されたクラスターを利用したデプロイの経験はあるが、クラスターを自ら構築したことはない。</p>
 <p>Lambda と APIGateway について、簡単な実務用 Bot の作成で触ったことがあり、概念は理解している。</p>
-<p>永続化に関して、RDS・DynamoDB についても、実務で採用したことがある。DynamoDBについては、オプション毎の料金体系を理解し、フェイルオーバー時の構成などを検討・構築したことがあるが、RDSを構築したことはまだなく、既存のものを利用する程度。</p>
+<p>永続化に関して、RDS と DynamoDB を実務で採用したことがある。DynamoDBについては、オプション毎の料金体系を理解し、フェイルオーバー時の構成などを検討・構築したことがあるが、RDSを自ら構築したことはまだなく、構築済みのDatabaseを利用する程度。</p>
 <p>S3とCloudFrontに関しては実務で利用したことがあり、基本的な利用ができる程度。</p>
 <p>IAM の発行・付与や、VPC の構築などはやったことがなく、概念を理解している程度。</p>
 <p>CloudWatch等、監視にまつわるサービスについては理解が浅く、これから理解を深める必要がある。</p>
@@ -532,7 +533,7 @@
 <p>1度実務にて触った経験があるが、GCE を構築し、負荷分散を敷く程度。</p>
 <h2 id="frontend">Frontend</h2>
 <h4 id="javascript">JavaScript</h4>
-<p>jsの基本的な動作については理解があるものの、Event Bubbling 等、一歩踏み込んだ仕様に関しては理解が浅い。</p>
+<p>jsの基本的な動作について理解がある。</p>
 <h4 id="react">React</h4>
 <p>一度実務にて採用したことがある。なお、実務では State の管理に Redux を採用しており、Reactの基本的な概念とState Management については理解がある。ComponentをLogicとUIで分割する等、簡単な設計はできるが、サービスのフロントをまるごと用意した経験はまだなく、これから経験を積む必要がある。</p>
 <h4 id="webpack">Webpack</h4>
@@ -1077,8 +1078,8 @@
       <div class="col py-2">
         <div class="card">
           <div class="card-body">
-            <h4 class="card-title exp-title text-muted mt-0 mb-1">本人確認機能を提供するプロジェクト</h4>
-            <h4 class="card-title exp-company text-muted my-0">Position: Developer &amp; Project Manager</h4>
+            <h4 class="card-title exp-title text-muted mt-0 mb-1">非公開</h4>
+            <h4 class="card-title exp-company text-muted my-0">Position: プロジェクトマネジメント及び開発</h4>
             <div class="text-muted exp-meta">
               Mar 2021 –
               
@@ -1101,28 +1102,31 @@
 <p>本人確認機能の提供</p>
 <h1 id="手法">手法</h1>
 <p>外部のe-KYCサービスを採用し、その本人確認結果をサービス内に反映する。</p>
-<p><img src="https://user-images.githubusercontent.com/31181316/128957906-04e9f335-d308-48d4-b5c0-3e5f779b1b73.png" alt="image"></p>
+<p><img src="https://user-images.githubusercontent.com/31181316/132692024-80fb3b63-6cfc-45d6-a2f3-05fa7e3a1fe3.png" alt="image"></p>
 <h1 id="担当工程">担当工程</h1>
 <ol>
-<li>要求定義</li>
-<li>要件定義</li>
-<li>外部サービスの選定及び見積もり~決済</li>
-<li>実装(上記EntryPoint Instance ・Result Fetch Instance)</li>
+<li>要求分析: 開発部長・法務部からの依頼を整理</li>
+<li>要件定義: 既存サービスに追加する機能の整理</li>
+<li>基本設計: 業務フロー・ER図の作成等</li>
+<li>詳細設計: APIインターフェースの定義・各アプリケーションの仕様検討等</li>
+<li>コーディング</li>
+</ol>
+<h1 id="メンバー構成">メンバー構成</h1>
+<ol>
+<li>要求分析: 当人及び開発部長1名・法務部複数名</li>
+<li>要件定義: 当人及び開発部長1名・法務部複数名</li>
+<li>基本設計: 当人及びテックリードの計2名</li>
+<li>詳細設計: 当人及びテックリードの計2名</li>
+<li>コーディング: 当人及び他1名の計2名</li>
 </ol>
 <h1 id="採用した技術">採用した技術</h1>
 <h2 id="spring-boot">Spring Boot</h2>
 <p>[選定理由]</p>
-<p>　
-自身を含め計2名での開発であり、一方のメンバーがSpring Bootの経験があったため、言語を揃え、レビューやノウハウの共有の観点から、Spring Bootを採用する経緯となった。
+<p>チームとしてSpring Bootを採用する機会が多かったことや、今回のメンバーがSpring Bootの経験があったため、言語を揃え、レビューやノウハウの共有の観点から、Spring Bootを採用することとなった。
 　</p>
-<p>複数のComponentによって構成されるため、PullRequestの影響範囲の確認や、domainの再利用等を考慮し、Multi Projects の構成を取りたかった点で、Gradleが適していたり、</p>
-<p>外部e-KYCサービスを、組織内の複数のサービスから参照すべく、マルチテナント構成としたかった。その際、Spring Securityによるアクセス制御が有効であり、</p>
-<p>結果として功を奏した選定となったと思う。</p>
-<h2 id="amazon-aurora">Amazon Aurora</h2>
-<p>本人確認Statusを管理する必要があった。Status管理の性質として、Transactionが複雑になるケースがありそうだった点や、柔軟にクエリを利用したい点があったので、
-RDBを採用したい旨弊チームのテックリードに相談した。Amazon Aurora はテックリードの推奨により採用した。</p>
-<h1 id="成果">成果</h1>
-<p>プロジェクトリリース後に記載予定。</p>
+<h2 id="rds-amazon-aurora">RDS: Amazon Aurora</h2>
+<p>[選定理由]</p>
+<p>本人確認に関するステータスを管理する必要があった。ステータスの性質として、トランザクションが複雑になるケースがありそうだった点や、柔軟にクエリを利用したい点があったので、当人から弊チームのテックリードに対してRDBを採用したい旨相談した。既存のプロジェクトでAmazon Auroraを利用していたこともあり、Amazon Auroraを採用した。</p>
 </div>
           </div>
         </div>
@@ -1149,7 +1153,7 @@ RDBを採用したい旨弊チームのテックリードに相談した。Amazo
         <div class="card">
           <div class="card-body">
             <h4 class="card-title exp-title text-muted mt-0 mb-1">動画広告を提供するプロジェクト</h4>
-            <h4 class="card-title exp-company text-muted my-0">Position: Developer</h4>
+            <h4 class="card-title exp-company text-muted my-0">Position: 開発</h4>
             <div class="text-muted exp-meta">
               Aug 2020 –
               
@@ -1160,11 +1164,9 @@ RDBを採用したい旨弊チームのテックリードに相談した。Amazo
                 <span>public</span>
               
             </div>
-            <div class="card-text"><h1 id="前提">前提</h1>
-<p>同上</p>
-<h1 id="背景">背景</h1>
+            <div class="card-text"><h1 id="背景">背景</h1>
 <p>SNSでも動画広告が主流となっているように、ブログでも動画広告が主流となりつつある。</p>
-<p>それに向け、動画広告の提供を開始することとなった。</p>
+<p>それに向け、弊社のアフィリエイトサービスでも、バナー広告以外に、動画広告の提供を開始することとなった。</p>
 <p><img src="https://user-images.githubusercontent.com/31181316/128892388-1e577b8c-5dae-4d37-9ab8-f03ad4c4b881.png" alt="image"></p>
 <h1 id="理想">理想</h1>
 <p>動画広告を提供できるようにする</p>
@@ -1172,8 +1174,15 @@ RDBを採用したい旨弊チームのテックリードに相談した。Amazo
 <p>動画広告を描画するjsタグを用意し、そのタグを配置するだけで、ブログ上に動画広告が掲載されるタグを用意する。</p>
 <h1 id="担当工程">担当工程</h1>
 <ol>
-<li>要件定義</li>
-<li>技術選定 ~ 実装</li>
+<li>要件定義: 動画広告の仕様を整理</li>
+<li>詳細設計: 採用するライブラリの選定等</li>
+<li>コーディング</li>
+</ol>
+<h1 id="メンバー構成">メンバー構成</h1>
+<ol>
+<li>要件定義: 当人及び開発部長の計2名</li>
+<li>詳細設計: 当人1名</li>
+<li>コーディング: 当人1名</li>
 </ol>
 <h1 id="採用した技術">採用した技術</h1>
 <h2 id="react">React</h2>
@@ -1216,7 +1225,7 @@ RDBを採用したい旨弊チームのテックリードに相談した。Amazo
         <div class="card">
           <div class="card-body">
             <h4 class="card-title exp-title text-muted mt-0 mb-1">広告の検索精度を改善するプロジェクト</h4>
-            <h4 class="card-title exp-company text-muted my-0">Position: Developer</h4>
+            <h4 class="card-title exp-company text-muted my-0">Position: 開発</h4>
             <div class="text-muted exp-meta">
               Feb 2020 –
               
@@ -1227,11 +1236,9 @@ RDBを採用したい旨弊チームのテックリードに相談した。Amazo
                 <span>public</span>
               
             </div>
-            <div class="card-text"><h1 id="前提">前提</h1>
-<p>同上</p>
-<h1 id="背景">背景</h1>
+            <div class="card-text"><h1 id="背景">背景</h1>
 <ol>
-<li>商材に関するデータは、OracleDB内に格納されている。</li>
+<li>アフィリエイトの商材データは、OracleDB内に格納されている。</li>
 <li>ブロガーが商材を検索する際は、検索ワードを元に、LIKE検索を実行するクエリをOracleDBに対して実行し、検索結果を表示している。</li>
 </ol>
 <p><img src="https://user-images.githubusercontent.com/31181316/94425655-40126880-01c7-11eb-91ff-97d05015ea7b.png" alt="image"></p>
@@ -1242,21 +1249,21 @@ RDBを採用したい旨弊チームのテックリードに相談した。Amazo
 <p><img src="https://user-images.githubusercontent.com/31181316/102949056-ac70df80-450a-11eb-8a18-cd20955ae7fc.png" alt="image"></p>
 <h1 id="担当工程">担当工程</h1>
 <ol>
-<li>技術選定(所属チームで議論)</li>
-<li>形態素解析のロジック考案・実装
+<li>コーディング: 形態素解析のロジック考案・形態素解析を実行するFilterの実装
 <img src="https://user-images.githubusercontent.com/31181316/94427508-29214580-01ca-11eb-9573-db6956f2e137.png" alt="image"></li>
-<li>ElasticSearchのindex設計・実装</li>
 </ol>
+<h1 id="メンバー構成">メンバー構成</h1>
+<p>コーディング: 当人及び他1名の計2名。</p>
 <h1 id="採用した技術">採用した技術</h1>
 <h2 id="elasticsearch">ElasticSearch</h2>
-<p>検索精度の向上を目的として採用されていることが多かった、<code>ElasticSearch</code>(以降ESと呼ぶ) か、<code>ES</code>と比較されやすい<code>Solr</code>　を比較し、結果 <code>ES</code> を採用した。</p>
 <p>［採用理由］</p>
+<p>検索精度の改善というテーマにおいて、ElasticSearchの存在感が強く、当人がプロジェクトに招集された時点で、プロジェクトでのElasticSearchの採用が決まっていた。招集後、選定に正当性があるか調査してほしいと依頼を受け、以下の調査の末、ElasticSearchで問題なさそうという結論に至った。</p>
 <ol>
 <li>
 <p>柔軟に検索ロジック  の構築をしたいので、plugin が豊富で簡単に拡張できる ES が良さそうだった。一応調査したが、Solr の場合は、Pluginを用意するために、 Jar ファイルを都度用意する必要があり、めんどくさそうだった。</p>
 </li>
 <li>
-<p>BI ツール及び、GUI として kibanaがあるのがかなり、魅力的だった。振り返ってみるとテストデータの投入や、クエリ作成など kibana によってとても捗った。solr にも banana という BI ツールがあるらしいが、個人的に kibana のほうが UI は素敵だった。</p>
+<p>BI ツール及び、GUI として kibanaがあるのが魅力的だった。振り返ってみるとテストデータの投入や、クエリ作成など kibana によってとても捗った。solr にも banana という BI ツールがあるらしいが、個人的に kibana のほうが UI は素敵だった。</p>
 </li>
 <li>
 <p>同様の MarketPlace 構築に向け GMO が ES を採用、また、マッチングアプリや、グルメサイト等も ES を採用しており、技術的に参照できそうなドキュメントが多かった。</p>
@@ -1266,11 +1273,14 @@ RDBを採用したい旨弊チームのテックリードに相談した。Amazo
 </li>
 </ol>
 <h1 id="成果">成果</h1>
-<p>OracleDBからESにデータを同期するために、ESで公式に推奨されているlogstashを利用することを検討している。</p>
-<p>プロジェクトに着手していた当時、別チームにてOracleDBの移行プロジェクトが同時進行していたため、データの同期自体は次回のマイルストーンとして設定し、データを受け入れるESのみを構築し、プロジェクトを完了した。データの同期を完了することで、検索精度の改善が見込まれる。</p>
+<p>データを同期すれば、検索を実行できるような環境を整えることができた。</p>
+<p>[データの同期について]</p>
+<p>既存の商材データを持つOracleDBから、ESにデータを同期するために、ESで公式に推奨されているlogstashを利用することを検討している。</p>
 <blockquote>
 <p><a href="https://www.elastic.co/jp/blog/how-to-keep-elasticsearch-synchronized-with-a-relational-database-using-logstash">https://www.elastic.co/jp/blog/how-to-keep-elasticsearch-synchronized-with-a-relational-database-using-logstash</a></p>
 </blockquote>
+<p>プロジェクトに着手していた当時、別チームにてOracleDBをオンプレからクラウドに移行するプロジェクトが進行していたため、</p>
+<p>データの同期自体は次回のマイルストーンとして設定し、データを受け入れるESのみを構築し、プロジェクトを完了した。</p>
 </div>
           </div>
         </div>
@@ -1297,7 +1307,7 @@ RDBを採用したい旨弊チームのテックリードに相談した。Amazo
         <div class="card">
           <div class="card-body">
             <h4 class="card-title exp-title text-muted mt-0 mb-1">広告に関するデータ構造を拡張するプロジェクト</h4>
-            <h4 class="card-title exp-company text-muted my-0">Position: Developper</h4>
+            <h4 class="card-title exp-company text-muted my-0">Position: 開発</h4>
             <div class="text-muted exp-meta">
               Feb 2020 –
               
@@ -1308,9 +1318,7 @@ RDBを採用したい旨弊チームのテックリードに相談した。Amazo
                 <span>public</span>
               
             </div>
-            <div class="card-text"><h1 id="前提">前提</h1>
-<p>同上</p>
-<h1 id="背景">背景</h1>
+            <div class="card-text"><h1 id="背景">背景</h1>
 <p>アフィリエイトサービス上に登録されている広告データには2パターンある。</p>
 <ol>
 <li>広告データ: 商材 = 1:1 のパターン</li>
@@ -1384,12 +1392,16 @@ RDBを採用したい旨弊チームのテックリードに相談した。Amazo
 </table>
 <h1 id="担当工程">担当工程</h1>
 <ol>
-<li>データフローの考案(所属チームにて議論)</li>
-<li>技術選定</li>
-<li>実装(データフロー④の部分)</li>
+<li>詳細設計: データフローの考案等</li>
+<li>コーディング</li>
+</ol>
+<h1 id="メンバー構成">メンバー構成</h1>
+<ol>
+<li>詳細設計: 当人及びテックリード1名の計2名</li>
+<li>コーディング: 当人及び他1名の計2名</li>
 </ol>
 <h1 id="手法">手法</h1>
-<p>直近のプロジェクトにてElasticSearchを導入している。</p>
+<p>直近のプロジェクトにてElasticSearchを用意している。</p>
 <p>検索時のクエリはElasticSearchに発行されるため、ElasticSearch内に商品データに関するテーブルを用意する。</p>
 <p>検索クエリを受け取った際は、広告データに商品データを紐付けた状態で検索結果を返す。</p>
 <p><img src="https://user-images.githubusercontent.com/31181316/102949056-ac70df80-450a-11eb-8a18-cd20955ae7fc.png" alt="image"></p>
@@ -1405,7 +1417,7 @@ RDBを採用したい旨弊チームのテックリードに相談した。Amazo
 <p>ESにフォーマットの異なるデータを投入する前に、データフォーマットを統一して、ESに投入するための Adapter Component を実装する必要があった。</p>
 <p>これらのデータフォーマットを整える際、Pandasを使いたかったので、Pythonを採用した。</p>
 <h1 id="成果">成果</h1>
-<p>同上</p>
+<p>商品データの受け取り~商品データの検索結果への反映を再現するアプリケーションを用意することができた。</p>
 </div>
           </div>
         </div>
@@ -1432,7 +1444,7 @@ RDBを採用したい旨弊チームのテックリードに相談した。Amazo
         <div class="card">
           <div class="card-body">
             <h4 class="card-title exp-title text-muted mt-0 mb-1">暗号化APIを開発するプロジェクト</h4>
-            <h4 class="card-title exp-company text-muted my-0">Position: Developper</h4>
+            <h4 class="card-title exp-company text-muted my-0">Position: 開発</h4>
             <div class="text-muted exp-meta">
               Nov 2019 –
               
@@ -1443,9 +1455,7 @@ RDBを採用したい旨弊チームのテックリードに相談した。Amazo
                 <span>public</span>
               
             </div>
-            <div class="card-text"><h1 id="前提">前提</h1>
-<p>同上</p>
-<h1 id="背景">背景</h1>
+            <div class="card-text"><h1 id="背景">背景</h1>
 <p>アフィリエイトサービスでは、URL内にクエリパラメータを付与することで、個人を識別する仕組みを実現している。</p>
 <p>ex) https://affiliate/index.html?user_name=田中太郎</p>
 <p>アフィリエイトサービスを複数利用している会社は、このURL内に、複数社分のクエリパラメータが付与され、URLが長くなってしまう。</p>
@@ -1458,7 +1468,15 @@ RDBを採用したい旨弊チームのテックリードに相談した。Amazo
 </code></pre><h1 id="手法">手法</h1>
 <p>発行されたクエリパラメータを暗号化してURLに付与し、コンバージョン(アフィリエイトが成立)の際は、暗号化したキーをクエリパラメータに戻して、既存の成果発生処理プロセスに流す。</p>
 <h1 id="担当工程">担当工程</h1>
-<p>要件定義〜実装まで</p>
+<ol>
+<li>詳細設計</li>
+<li>コーディング</li>
+</ol>
+<h1 id="メンバー構成">メンバー構成</h1>
+<ol>
+<li>詳細設計: 当人及びテックリード1名の計2名</li>
+<li>コーディング: 当人1名</li>
+</ol>
 <h2 id="採用した技術">採用した技術</h2>
 <h2 id="aws-dynamodb">AWS DynamoDB</h2>
 <p>［採用理由］</p>
